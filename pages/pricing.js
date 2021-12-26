@@ -50,7 +50,7 @@ export default function About() {
                 <div className='  max-w-4xl'>
                     <Collapse.Group>
                         <Collapse title="What is a serverless infrastructure?">
-                            <Text>With servers/instances, you pay per-hour or a fixed price. With Serverless, you pay per-request. This means you're not charged when the database isn't in use. Netinc configures and manages the database for you.</Text>
+                            <Text>{"With servers/instances, you pay per-hour or a fixed price. With Serverless, you pay per-request. This means you're not charged when the database isn't in use. Netinc configures and manages the database for you."}</Text>
                         </Collapse>
                         <Collapse title="How does Netinc compare to self hosted appwrite instance?">
                             <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -58,7 +58,7 @@ export default function About() {
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
                         </Collapse>
                         <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>Self hosted solutions have obvious limitations. Netinc provides managed apperite instances which gives your users very low latency. Our instances autoscale based on the the amount of usage they get which keeps your costs low. Moreover, we provide enterprise cloud solutions which simply Isn't possible possible when you host your own cloud.</Text>
+                            <Text>{"Self hosted solutions have obvious limitations. Netinc provides managed apperite instances which gives your users very low latency. Our instances autoscale based on the the amount of usage they get which keeps your costs low. Moreover, we provide enterprise cloud solutions which simply Isn't possible possible when you host your own cloud."}</Text>
                         </Collapse>
                         <Collapse title="How does Netinc compare to self hosted appwrite instance?">
                             <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,

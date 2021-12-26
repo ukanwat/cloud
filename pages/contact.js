@@ -65,7 +65,7 @@ export default function Contact() {
                             Github Repository
                         </div>
                         <div>
-                            Visit Appwrite's github repository.
+                            {"Visit Appwrite's github repository."}
                         </div>
 
                     </div>

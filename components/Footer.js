@@ -50,7 +50,7 @@ const Footer = () => {
 
                 </div>
                 </a></Link>
-                <Link href={'https://appwrite.io/docs/sdks'}><a target="_blank" className='text-gray-600 hover:text-gray-900 hover:underline'>  <div className='flex'>
+                <Link href={'/contact'}><a target="_blank" className='text-gray-600 hover:text-gray-900 hover:underline'>  <div className='flex'>
 
                     Contact Us
                     <div className='mt-0.5'>

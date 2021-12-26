@@ -236,7 +236,7 @@ export default function Home() {
           <FeatureList features={comparisonFeatures} />
           <ComparisonList features={[null, 'free', true, '15GB then $0.08 per GB', 'Free', null, true, true, true, null, '100GB then $0.012 per GB', true, 'free', null, 'free', 'free', 'free', '15 types of runtimes']} info={{ type: "Netinc's Appwrite", action: 'Start Using Now', 'function': () => { }, 'pricing': 'Starts at $9' }} />
           <ComparisonList features={[null, 'free', true, '8GB then $0.125 per GB', '$0.09 per GB', null, true, true, true, null, '100GB then $0.021 per GB', true, '$0.09 per GB', null, false, false, false, 'SQL functions']} info={{ type: "Supabase", action: 'Know More', 'function': () => { }, 'secondary': true, 'pricing': 'Starts at $25' }} />
-          <ComparisonList features={[null, '$0.01-0.09 per 100,000', 'Separate Database', '1GB then $0.108 per GB', '5GB then $0.12 per GB', null, true, true, false, null, '5GB then $0.026 per GB', true, '$0.12 per GB', null, '2M then $0.4 per million', '5GB then $0.12 per GB', '$0.009 GB-hr & $0.036 GHz-hr', 'Nodejs']} info={{ type: 'Firebase', action: 'Know More', 'function': () => { }, 'secondary': true, 'pricing': 'Pay as you go' }} />
+          <ComparisonList features={[null, '$0.01-0.09 per 100,000', true, '1GB then $0.108 per GB', '5GB then $0.12 per GB', null, true, true, false, null, '5GB then $0.026 per GB', true, '$0.12 per GB', null, '2M then $0.4 per million', '5GB then $0.12 per GB', '$0.009 GB-hr & $0.036 GHz-hr', 'Nodejs']} info={{ type: 'Firebase', action: 'Know More', 'function': () => { }, 'secondary': true, 'pricing': 'Pay as you go' }} />
         </div>      </div>
       <div className='flex flex-col mt-20 items-center'>
         <div className='py-8 flex flex-col items-center space-y-2'>
@@ -250,7 +250,7 @@ export default function Home() {
         <div className='  max-w-4xl'>
           <Collapse.Group>
             <Collapse title="What is a serverless infrastructure?">
-              <Text>With servers/instances, you pay per-hour or a fixed price. With Serverless, you pay per-request. This means you're not charged when the database isn't in use. Netinc configures and manages the database for you.</Text>
+              <Text>{"With servers/instances, you pay per-hour or a fixed price. With Serverless, you pay per-request. This means you're not charged when the database isn't in use. Netinc configures and manages the database for you."}</Text>
             </Collapse>
             <Collapse title="How does Netinc compare to self hosted appwrite instance?">
               <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -258,7 +258,7 @@ export default function Home() {
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
             </Collapse>
             <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-              <Text>Self hosted solutions have obvious limitations. Netinc provides managed apperite instances which gives your users very low latency. Our instances autoscale based on the the amount of usage they get which keeps your costs low. Moreover, we provide enterprise cloud solutions which simply Isn't possible possible when you host your own cloud.</Text>
+              <Text>{"Self hosted solutions have obvious limitations. Netinc provides managed apperite instances which gives your users very low latency. Our instances autoscale based on the the amount of usage they get which keeps your costs low. Moreover, we provide enterprise cloud solutions which simply Isn't possible possible when you host your own cloud."}</Text>
             </Collapse>
             <Collapse title="How does Netinc compare to self hosted appwrite instance?">
               <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
