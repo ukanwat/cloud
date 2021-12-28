@@ -3,6 +3,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
+      fontFamily: {
+        spartan: ["Spartan", "sans-serif"]
+      },
       borderWidth: {
         'p': '1.5px'
       },

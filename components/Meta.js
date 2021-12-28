@@ -11,6 +11,12 @@ const Meta = ({ title, keywords, description }) => {
 
                 //more og:
             }
+            <link
+                rel="preload"
+                href="/fonts/Spartan/static/Spartan-Bold.ttf"
+                as="font"
+                crossOrigin=""
+            />
             <meta charSet='utf-8' />
             <link rel='icon' href='/favicon.ico' />
             <title>{title}</title>

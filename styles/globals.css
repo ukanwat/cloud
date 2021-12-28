@@ -19,3 +19,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+
+
+@font-face {
+  font-family: "Spartan";
+  src: url("/fonts/Spartan/static/Spartan-Bold.ttf");
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("/fonts/Spartan/static/Spartan-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
