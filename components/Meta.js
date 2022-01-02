@@ -13,7 +13,7 @@ const Meta = ({ title, keywords, description }) => {
             }
             <link
                 rel="preload"
-                href="/fonts/Spartan/static/Spartan-Bold.ttf"
+                href="/fonts/League-Spartan.ttf"
                 as="font"
                 crossOrigin=""
             />

@@ -4,7 +4,7 @@ import React from 'react';
 const FeatureCard = ({ title, data, icon }) => {
 
     return (
-        <div className="w-80 h-72 bg-gray-50 rounded-2xl flex flex-col justify-center items-center py-8 px-6  space-y-4">
+        <div className="w-80 h-72 bg-white shadow-sm rounded-2xl flex flex-col justify-center items-center py-8 px-6  space-y-4">
             <div className='w-40 h-40'>
                 {icon}
 

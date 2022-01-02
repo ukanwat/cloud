@@ -3,6 +3,7 @@ const pricingCard = () => {
     return (
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
             width="380px" height="380px" viewBox="0 0 300 300"
+            color='#fff'
             preserveAspectRatio="xMidYMid meet">
 
             <g transform="translate(0.000000,120) scale(0.0100000,-0.0100000)"

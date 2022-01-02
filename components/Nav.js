@@ -36,10 +36,10 @@ const Nav = () => {
                             </svg>
                         </div>
 
-                        <div className='flex space-y-0 justify-center mb-3  text-5xl items-center'>
+                        <div className='flex space-y-0 justify-center mb-3  font-leagueSpartan  text-5xl items-center'>
 
-                            <div className='font-bold text-3xl h-5'>NET</div>
-                            <div className='font-light text-3xl h-5'>INC</div>
+                            <div className='font-bold  text-3xl h-5'>NET</div>
+                            <div className='font-bold text-3xl h-5'>INC</div>
                         </div>
 
                     </div>

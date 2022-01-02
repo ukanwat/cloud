@@ -6,12 +6,13 @@ import { Check, QuestionCircle } from '@geist-ui/react-icons';
 const ComparisonList = ({ features, info }) => {
 
     return (
-        <div className='flex flex-col divide-y-p'>
+        <div className='flex flex-col divide-y-p bg-white'>
 
             <div className='w-64 font-bold flex flex-col justify-center items-center text-2xl'>
                 {info.type}
 
-                <div className='text-gray-600 font-semibold text-lg'>
+                <div className='text-gray-600 font-semibold text-base pb-1
+                '>
                     {info.pricing}
                 </div>
 
@@ -52,7 +53,7 @@ const ComparisonList = ({ features, info }) => {
 const FeatureList = ({ features, topButton }) => {
 
     return (
-        <div className='flex flex-col divide-y-p'>
+        <div className='flex flex-col divide-y-p bg-white'>
 
             <div className={'w-64  font-bold flex justify-center items-center text-2xl'}>
                 <div className={topButton == true ? ' h-33' : 'h-15'}>

@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        spartan: ["Spartan", "sans-serif"]
+        spartan: ["Spartan", "sans-serif"],
+        leagueSpartan: ["LeagueSpartan", "sans-serif"]
       },
       borderWidth: {
         'p': '1.5px'
@@ -32,12 +33,7 @@ module.exports = {
         current: 'currentColor',
         primary: {
           light: '#85d7ff',
-          DEFAULT: '#1fb6ff',
-          dark: '#009eeb',
-        },
-        main: {
-          light: '#85d7ff',
-          DEFAULT: '#1ee682',
+          DEFAULT: '#1f76ff',
           dark: '#009eeb',
         },
         bg: {

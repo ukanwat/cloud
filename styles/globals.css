@@ -22,12 +22,29 @@ a {
 
 
 
+.gradient-background {
+  background: linear-gradient(222deg,deepskyblue,darkviolet,blue,#a91a1a,#54cc00);
+  background-size: 300% 300%;
+  animation: gradient-animation 100s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 @font-face {
   font-family: "Spartan";
-  src: url("/fonts/Spartan/static/Spartan-Bold.ttf");
+  src: url("/fonts/Spartan/static/Spartan-ExtraBold.ttf");
   font-style: bold;
-  font-weight: 700;
+  font-weight: 800;
   font-display: swap;
 }
 @font-face {
@@ -35,5 +52,13 @@ a {
   src: url("/fonts/Spartan/static/Spartan-Regular.ttf");
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("/fonts/League-Spartan.ttf");
+  font-style: bold;
+  font-weight: 700;
   font-display: swap;
 }

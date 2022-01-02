@@ -18,19 +18,16 @@ export default function About() {
             </div>
 
 
-            <div className='flex w-full justify-center items-center text-2xl mt-10 font-medium text-gray-600'>
-                Scale to millions with
+            <div className='flex w-full justify-center items-center text-2xl my-5 font-medium text-gray-600'>
+                Scale to millions with fully Managed Appwrite on Netinc Cloud.
 
 
 
 
             </div>
-            <div className='flex w-full justify-center items-center text-2xl mt-2 font-medium text-gray-600'>
-                fully Managed Appwrite on Netinc Cloud.
-            </div>
 
 
-            <div className='flex justify-center items-center my-6'>
+            <div className='flex justify-center items-center my-6 border-p rounded-3xl py-5'>
                 <FeatureList features={comparisonFeatures} topButton={true} />
                 <ComparisonList features={[null, 'free', true, '15GB then $0.08 per GB', 'Free', null, true, true, true, null, '100GB then $0.012 per GB', true, 'free', null, 'free', 'free', 'free', '15 types of runtimes']} info={{ type: "Cloud", action: 'Start Using Now', 'function': () => { }, 'pricing': 'Starts at $9', 'topButton': true }} />
                 <ComparisonList features={[null, 'free', true, '8GB then $0.125 per GB', '$0.09 per GB', null, true, true, true, null, '100GB then $0.021 per GB', true, '$0.09 per GB', null, false, false, false, 'SQL functions']} info={{ type: "Cloud Enterprise", action: 'Contact Sales', 'function': () => { }, 'secondary': true, 'pricing': 'Custom', 'topButton': true }} />
@@ -47,63 +44,32 @@ export default function About() {
 
 
 
-                <div className='  max-w-4xl'>
+                <div className='  max-w-4xl mb-20'>
                     <Collapse.Group>
-                        <Collapse title="What is a serverless infrastructure?">
-                            <Text>{"With servers/instances, you pay per-hour or a fixed price. With Serverless, you pay per-request. This means you're not charged when the database isn't in use. Netinc configures and manages the database for you."}</Text>
+
+                        <Collapse title="When will I be billed?">
+                            <Text>We will bill you at the start of the next month..</Text>
                         </Collapse>
-                        <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+                        <Collapse title="How can I monitor my usage and billing?">
+                            <Text>You can do this in the console.</Text>
                         </Collapse>
-                        <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>{"Self hosted solutions have obvious limitations. Netinc provides managed apperite instances which gives your users very low latency. Our instances autoscale based on the the amount of usage they get which keeps your costs low. Moreover, we provide enterprise cloud solutions which simply Isn't possible possible when you host your own cloud."}</Text>
+                        <Collapse title="I'm worried I could end up with a huge bill at the end of the month?">
+                            <Text>Our services are extremely affordable compared to other providers. You can set a pricing alert to track your usage</Text>
                         </Collapse>
-                        <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+                        <Collapse title="Can the pricing change in future?">
+                            <Text>Our pricing most likely will not change in any near future because our services are catered towards developers.</Text>
                         </Collapse>
-                        <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+                        <Collapse title="Do you offer free trial?">
+                            <Text>No, currently as of now we do not provide any kind of free trial because our cloud plans are already pretty affordable.</Text>
                         </Collapse>
-                        <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+                        <Collapse title="What kind of support does Netinc provide?">
+                            <Text>If you have the cloud plan you can get support by email at support@netinc.io. And for enterprise plan we provide 24x7 support.</Text>
                         </Collapse>
-                        <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+                        <Collapse title="Where can I get the Netinc's privacy policy and Terms?">
+                            <Text>You can read the Privacy policy  and terms of service at https://netinc.io/legal/privacy and https://netinc.io/legal/terms respectively.</Text>
                         </Collapse>
-                        <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
-                        </Collapse>
-                        <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
-                        </Collapse>
-                        <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
-                        </Collapse>
-                        <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
-                        </Collapse>
-                        <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+                        <Collapse title="Are there any limits on data transfer?">
+                            <Text>No, unlike most of the cloud providers our data egress and ingress are totally free with no limits. </Text>
                         </Collapse>
                     </Collapse.Group>
                 </div>

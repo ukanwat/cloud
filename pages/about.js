@@ -7,7 +7,7 @@ export default function About() {
 
         <div className="pt-24 mt-32 flex flex-col justify-center items-center">
             <div className='flex w-full justify-center items-center text-6xl font-extrabold'>
-                {'Make Data the Easiest'}
+                {'Make Backend the Easiest'}
             </div>
             <div className='flex w-full justify-center items-center text-6xl  font-extrabold'>
                 {'Part of Your Job'}
@@ -23,13 +23,13 @@ export default function About() {
 
             </div>
             <div className='flex w-full justify-center items-center text-2xl mt-2 font-medium text-gray-600'>
-                So, you focus on more important things.
+                So, you can focus on more important things.
             </div>
             <div className='flex w-full justify-center items-center text-2xl mt-2 font-medium text-gray-600'>
                 With Storage based pricing, you only pay for what you use.
             </div>
 
-            <div className='py-20 flex items-start space-x-8'>
+            <div className='py-20 flex items-start space-x-8 mb-10'>
                 <div className=' space-y-2 flex flex-col justify-center items-center'>
                     <img width={80} src={'https://storage.googleapis.com/netinc/codeAbout.png'} />
                     <div className=' font-bold text-xl'>
@@ -49,7 +49,7 @@ export default function About() {
                         We Simplify common development tasks to help you grow.
                     </div>
                 </div>
-                <div className=' space-y-2 flex flex-col justify-center items-center'>
+                <div className=' space-y-2 flex flex-col justify-center items-center '>
                     <img width={80} src={'https://storage.googleapis.com/netinc/handAbout.png'} />
                     <div className=' font-bold text-xl'>
                         Amazing

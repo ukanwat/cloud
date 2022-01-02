@@ -4,7 +4,7 @@ import { ArrowUpRight } from '@geist-ui/react-icons'
 const Footer = () => {
 
     return (
-        <div className="flex flex-col items-center justify-center space-y-8 bottom-0 h-96 bg-gray-50 w-screen mt-10">
+        <div className="flex flex-col items-center justify-center space-y-8 bottom-0 h-96 bg-gray-50 w-screen mt-0">
             <div className='flex'>
                 <div className='h-12 w-12'>
 
