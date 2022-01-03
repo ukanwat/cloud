@@ -23,7 +23,7 @@ const Footer = () => {
 
                 <div className='flex flex-col space-y-0 font-extrabold text-3xl items-center'>
 
-                    <div className='font-bold text-lg h-5'>NETINC</div>
+                    <div className='font-bold text-xl h-5'>NetInc</div>
                     <div className='font-light text-lg h-5'>CLOUD</div>
                 </div>
 

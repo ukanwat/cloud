@@ -26,7 +26,7 @@ export default function About() {
                 So, you can focus on more important things.
             </div>
             <div className='flex w-full justify-center items-center text-2xl mt-2 font-medium text-gray-600'>
-                With Storage based pricing, you only pay for what you use.
+                With Usage based pricing, you only pay for what you use.
             </div>
 
             <div className='py-20 flex items-start space-x-8 mb-10'>

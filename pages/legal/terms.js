@@ -58,8 +58,8 @@ export default function Terms() {
             <div className='py-10 w-full pl-20 flex items-center justify-center space-x-8 bg-gray-50 border-b-p mt-32 text-base'>
                 <div className='w-200'>
 
-                    {/* <Markdown
-                    >{md}</Markdown> */}
+                    <Markdown
+                    >{md}</Markdown>
                 </div>
 
             </div>

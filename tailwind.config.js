@@ -33,7 +33,7 @@ module.exports = {
         current: 'currentColor',
         primary: {
           light: '#85d7ff',
-          DEFAULT: '#1f76ff',
+          DEFAULT: '#0070f3',
           dark: '#009eeb',
         },
         bg: {

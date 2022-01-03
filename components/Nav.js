@@ -38,8 +38,7 @@ const Nav = () => {
 
                         <div className='flex space-y-0 justify-center mb-3  font-leagueSpartan  text-5xl items-center'>
 
-                            <div className='font-bold  text-3xl h-5'>NET</div>
-                            <div className='font-bold text-3xl h-5'>INC</div>
+                            <div className='font-bold  text-3xl h-5'>NetInc</div>
                         </div>
 
                     </div>
@@ -63,7 +62,7 @@ const Nav = () => {
 
                 </div>
 
-                <div className='rounded-lg bg-black px-3 py-2 text-white'>Console</div>
+                <div className='rounded-lg bg-black px-3 py-2 text-white'>Console (coming soon)</div>
             </nav>
         </header >
 
