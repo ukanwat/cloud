@@ -131,30 +131,34 @@ export default function Home() {
   return (
     <div className='pt-24 mt-10'>
 
-      <div className='flex w-full justify-center  items-center ml-0 pl-0 px-2'>
+      <div className='flex w-full justify-center  items-center ml-0 pl-0 mx-2 '>
         <h1 className='text-3xl sm:text-4xl lg:text-6xl items-center justify-center flex-wrap font-extrabold flex px-2 '>
-          <div className='pr-3 text-primary font-leagueSpartan text-center'>
+          <div className=' text-primary font-leagueSpartan text-center'>
             {'Serverless Managed Services'}
           </div>
 
 
         </h1>
       </div>
-      <div className=' flex font-leagueSpartan w-full justify-center items-center text-3xl sm:text-4xl lg:text-6xl px-4 text-center font-extrabold'>
-        for web and mobile Apps
-      </div>
-      <div className='px-4 text-center flex w-full justify-center items-center text-xl sm:text-2xl mt-4 sm:mt-10 font-medium text-gray-600'>
-        Create an affordable autoscaling backend in less than 5 minutes.
+      <div className='px-2'>
+        <div className=' flex font-leagueSpartan w-full justify-center items-center text-3xl sm:text-4xl lg:text-6xl sm:px-0 text-center font-extrabold'>
+          for web and mobile Apps
+        </div>
+        <div className='px-4 text-center flex w-full justify-center items-center text-xl sm:text-2xl mt-4 sm:mt-10 font-medium text-gray-600'>
+          Create an affordable autoscaling backend in less than 5 minutes.
 
 
-      </div>
-      <div className='hidden sm:flex w-full justify-center items-center px-4  text-xl sm:text-2xl text-center mt-2 font-medium text-gray-600'>
-        Start your project with Database, Authentication, Storage and Functions.
+        </div>
+        <div className='hidden sm:flex w-full justify-center items-center px-4  text-xl sm:text-2xl text-center mt-2 font-medium text-gray-600'>
+          Start your project with Database, Authentication, Storage and Functions.
+        </div>
+
+        <div className='flex w-full  text-xl sm:text-2xl justify-center items-center  text-center mt-2 text-black font-bold'>
+          Appwrite is open source so, No vendor lock-in.
+        </div>
       </div>
 
-      <div className='flex w-full  text-xl sm:text-2xl px-4  justify-center items-center  text-center mt-2 text-black font-bold'>
-        Appwrite is open source so, No vendor lock-in.
-      </div>
+
 
 
       <div className='flex w-full px-2 justify-center items-center py-12 font-medium space-y-2 sm:space-y-0 sm:space-x-4 flex-col sm:flex-row'>

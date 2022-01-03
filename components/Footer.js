@@ -4,7 +4,7 @@ import { ArrowUpRight } from '@geist-ui/react-icons'
 const Footer = () => {
 
     return (
-        <div className="flex flex-col items-center justify-center space-y-8 bottom-0 h-96 bg-gray-50 w-screen mt-0">
+        <div className=" pt-5 flex flex-col items-center justify-center space-y-8 bottom-0 h-96 bg-gray-50 w-screen mt-0">
             <div className='flex'>
                 <div className='h-12 w-12'>
 
@@ -31,9 +31,10 @@ const Footer = () => {
 
 
 
-            <div className='flex space-x-8'>
+            <div className='flex flex-col sm:flex-row items-center space-x-0 space-y-2 sm:space-x-8 sm:space-y-0
+            '>
 
-                <Link href={'/legal/privacy'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>  <div className='flex'>
+                <Link href={'/legal/privacy'}><a className='text-gray-600 w-40 hover:text-gray-900  flex justify-start hover:underline'>  <div className='flex'>
 
                     Privacy Policy
                     <div className='mt-0.5'>
@@ -42,7 +43,7 @@ const Footer = () => {
 
                 </div>
                 </a></Link>
-                <Link href={'/legal/terms'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>  <div className='flex'>
+                <Link href={'/legal/terms'}><a className='text-gray-600 w-40 hover:text-gray-900 flex justify-start hover:underline'>  <div className='flex'>
                     Terms of Service
                     <div className='mt-0.5'>
                         <ArrowUpRight size={21} color='#999' />
@@ -50,7 +51,7 @@ const Footer = () => {
 
                 </div>
                 </a></Link>
-                <Link href={'/contact'}><a target="_blank" className='text-gray-600 hover:text-gray-900 hover:underline'>  <div className='flex'>
+                <Link href={'/contact'}><a target="_blank" className='text-gray-600 w-40 flex justify-start hover:text-gray-900 hover:underline'>  <div className='flex'>
 
                     Contact Us
                     <div className='mt-0.5'>
@@ -60,12 +61,15 @@ const Footer = () => {
                 </div>
                 </a></Link>
             </div>
-            <div className='text-lg'>
+            <div className='px-2'>   <div className='text-lg px-2 text-center'>
                 © 2022 Netinc. All rights reserved.
+            </div></div>
+            <div className='px-2'>
+                <div className='w-full sm:w-150 text-sm text-gray-500 text-center  pb-5'>
+                    * Appwrite is a trademark of APPWRITE CODE LTD. Any rights therein are reserved to APPWRITE CODE LTD. Any use by Netinc is for referential purposes only and does not indicate any sponsorship, endorsement or affiliation between Appwrite and Netinc.
+                </div>
             </div>
-            <div className='w-150 text-sm text-gray-500 text-center'>
-                * Appwrite is a trademark of APPWRITE CODE LTD. Any rights therein are reserved to APPWRITE CODE LTD. Any use by Netinc is for referential purposes only and does not indicate any sponsorship, endorsement or affiliation between Appwrite and Netinc.
-            </div>
+
 
 
 

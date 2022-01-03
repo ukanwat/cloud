@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import React, { useEffect, useState } from "react";
 import { ArrowUpRight } from '@geist-ui/react-icons'
-import { Tooltip } from '@geist-ui/react'
+import { Popover, Tooltip } from '@geist-ui/react'
 const Nav = () => {
 
     const [shadow, setShadow] = useState(false);
@@ -18,7 +18,7 @@ const Nav = () => {
 
     return (
         <header className="fixed top-0 z-50 w-full shadow-none shadow-transparent backdrop-blur-lg bg-white/40">
-            <nav className={"border-b py-2 h-16 pt-4 px-40 flex justify-around items-center"}>
+            <nav className={"border-b py-2 h-16 pt-4 xl:px-40 flex justify-around items-center"}>
                 <Link href={'/'}><a className='text-black'>
                     <div className='flex items-center'>
                         <div className='h-12 w-12'>
@@ -45,7 +45,7 @@ const Nav = () => {
                 </a></Link>
 
 
-                <div className='flex justify-between items-center space-x-10'>
+                <div className='hidden md:flex justify-between items-center space-x-4    sm:space-x-10 '>
                     <Link href={'/'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>Product</a></Link>
                     <Link href={'/pricing'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>Pricing</a></Link>
                     <Link href={'/about'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>About</a></Link>
@@ -62,7 +62,10 @@ const Nav = () => {
 
                 </div>
 
-                <div className='rounded-lg bg-black px-3 py-2 text-white'>Console (coming soon)</div>
+                <div className='rounded-lg bg-black px-3 py-2 text-white h-6'>Console (soon)</div>
+                <Popover content={<div className='h-44 w-full mx-4'></div>}>
+                    <svg height="32px" id="Layer_1" style={{ enableBackground: 'new 0 0 32 32' }} version="1.1" viewBox="0 0 32 32" width="32px" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" /></svg>
+                </Popover>
             </nav>
         </header >
 
