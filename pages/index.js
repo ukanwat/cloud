@@ -116,13 +116,13 @@ export default function Home() {
   )
 
   const Feature = ({ text }) => (
-    <div className='flex space-x-4 h-10 items-center'>
+    <div className='flex space-x-4 h-10 items-center '>
       <div className='mt-6'> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         width="48" height="48"
         viewBox="0 0 48 48"
         style={{ fill: '#0080f2' }}>    <path d="M 12 2 C 6.486 2 2 6.486 2 12 C 2 17.514 6.486 22 12 22 C 17.514 22 22 17.514 22 12 C 22 10.874 21.803984 9.7942031 21.458984 8.7832031 L 19.839844 10.402344 C 19.944844 10.918344 20 11.453 20 12 C 20 16.411 16.411 20 12 20 C 7.589 20 4 16.411 4 12 C 4 7.589 7.589 4 12 4 C 13.633 4 15.151922 4.4938906 16.419922 5.3378906 L 17.851562 3.90625 C 16.203562 2.71225 14.185 2 12 2 z M 21.292969 3.2929688 L 11 13.585938 L 7.7070312 10.292969 L 6.2929688 11.707031 L 11 16.414062 L 22.707031 4.7070312 L 21.292969 3.2929688 z"></path></svg></div>
 
-      <div className='text-xl'>
+      <div className='text-base  sm:text-xl w-full lg:w-120'>
         {text}
       </div>
 
@@ -131,42 +131,38 @@ export default function Home() {
   return (
     <div className='pt-24 mt-10'>
 
-      <div className='flex w-full justify-center h-24 items-center ml-0 pl-0'>
-        <h1 className='text-6xl font-extrabold flex'>
-          <div className='pr-3  font-leagueSpartan'>
-            {'Serverless Managed '}
-          </div>
-
-          <div className=' text-primary font-leagueSpartan'>
-            Appwrite
+      <div className='flex w-full justify-center  items-center ml-0 pl-0 px-2'>
+        <h1 className='text-3xl sm:text-4xl lg:text-6xl items-center justify-center flex-wrap font-extrabold flex px-2 '>
+          <div className='pr-3 text-primary font-leagueSpartan text-center'>
+            {'Serverless Managed Services'}
           </div>
 
 
         </h1>
       </div>
-      <div className='flex font-leagueSpartan w-full justify-center items-center text-6xl font-extrabold'>
+      <div className=' flex font-leagueSpartan w-full justify-center items-center text-3xl sm:text-4xl lg:text-6xl px-4 text-center font-extrabold'>
         for web and mobile Apps
       </div>
-      <div className='flex w-full justify-center items-center text-2xl mt-10 font-medium text-gray-600'>
+      <div className='px-4 text-center flex w-full justify-center items-center text-xl sm:text-2xl mt-4 sm:mt-10 font-medium text-gray-600'>
         Create an affordable autoscaling backend in less than 5 minutes.
 
 
       </div>
-      <div className='flex w-full justify-center items-center text-2xl mt-2 font-medium text-gray-600'>
+      <div className='hidden sm:flex w-full justify-center items-center px-4  text-xl sm:text-2xl text-center mt-2 font-medium text-gray-600'>
         Start your project with Database, Authentication, Storage and Functions.
       </div>
 
-      <div className='flex w-full justify-center items-center text-2xl mt-2 text-black font-bold'>
+      <div className='flex w-full  text-xl sm:text-2xl px-4  justify-center items-center  text-center mt-2 text-black font-bold'>
         Appwrite is open source so, No vendor lock-in.
       </div>
 
 
-      <div className='flex w-full justify-center items-center py-12 font-medium space-x-4'>
+      <div className='flex w-full px-2 justify-center items-center py-12 font-medium space-y-2 sm:space-y-0 sm:space-x-4 flex-col sm:flex-row'>
         <Button auto type="success">Get Started(coming soon)</Button>  <Link href={'https://appwrite.io/'}  ><a target="_blank"><Button auto type="">Read more about Appwrite</Button></a></Link>
 
       </div>
-      <div className='flex justify-center space-x-10'>
-        <div className='w-150 flex flex-col rounded-3xl shadow-xl ml-10'>
+      <div className='flex flex-col px-2 lg:flex-row space-y-12 justify-center items-center space-x-10'>
+        <div className='w-full sm:w-120 md:w-150 flex flex-col rounded-3xl shadow-xl'>
           <div className='flex justify-start bg-gray-700 h-8 w-full rounded-t-lg'>
             <div className='px-2 flex justify-between items-center h-8 w-10 ml-2'>
 
@@ -180,7 +176,7 @@ export default function Home() {
 
                 {lang[1]}  <ChevronDown size={20} /></button></Popover>
           </div>
-          <div className='w-150 h-72'>
+          <div className='w-full sm:w-120 md:w-150 h-72'>
             <GlobalTheme.Provider value={() => ({ mode: 'dark' })}>
 
               <CodeBlock language={lang[0]} showLineNumbers={true} text={codes[lang[0]]} className='rounded-b-3xl' />
@@ -189,9 +185,9 @@ export default function Home() {
         </div>
 
         <div className='
-        flex flex-col w-150 space-y-10'>
+        flex flex-col w-full sm:w-120 md:w-150 space-y-10'>
           <Feature text={'Read/Write latency of less than 3 ms.'} />
-          <Feature text={'Replicated instances across multiple datacenters around the world for best user experience.'} />
+          <Feature text={'Replicated instances across multiple datacenters around the world.'} />
           <Feature text={'Autoscaling Serverless Infrastructure.'} />
 
 
@@ -202,7 +198,7 @@ export default function Home() {
       </div>
 
 
-      <section className=" mt-20 bg-white">
+      <section className=" mt-20 bg-white px-2">
         <div className="max-w-7xl px-10 mx-auto sm:text-center">
           <p className="text-blue-500 font-bold text-lg tracking-wide uppercase">Our serverless Offerings</p>
           <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl mt-3">Serverless Products We Manage For You</h2>
@@ -273,11 +269,11 @@ export default function Home() {
         </div>
       </section>
 
-      <div className='py-10 flex flex-col mt-20 items-center bg-gray-50 mb-0'>
-        <div className=' text-5xl font-bold'>Core Features</div>
+      <div className='py-10 flex flex-col mt-20 items-center bg-gray-50 mb-0 px-12 pr-16 sm:pr-10 justify-center'>
+        <div className='text-3xl sm:text-4xl lg:text-5xl font-bold pb-4 w-full sm:w-96 sm:pl-8'>Core Features</div>
         <div className='  pb-8 font-bold text-primary tracking-wide text-lg uppercase'>Features which define our infrastructure</div>
 
-        <div className=' grid gap-10 grid-cols-2 my-8'>
+        <div className=' grid grid-col-1 lg:grid-cols-2 my-8'>
           <FeatureCard icon={pricingCard()} title={"Usage based pricing"} data={'We only charge by the amount of storage you are using. Network egress and Compute time is totally free.'} />
           <FeatureCard icon={globalCard()} title={"Global Low Latency"} data={'With Global Appwrite Instances, you can access your database from anywhere with very low latency.'} />
           <FeatureCard icon={fastCard()} title={"Ultra fast machines"} data={'We run your instances on dedicated machines with NVMe to acheive the best performance.'} />
@@ -295,8 +291,8 @@ export default function Home() {
 
 
 
-      <section className="flex items-center justify-center pb-14 pt-10 bg-white min-w-screen">
-        <div className="px-16 bg-white">
+      <section className="flex items-center px-2 justify-center pb-14 pt-10 bg-white min-w-screen">
+        <div className="px-4 bg-white">
           <div className="container flex flex-col items-start mx-auto lg:items-center">
             <p className="relative flex items-start justify-start w-full font-bold text-primary tracking-wide text-lg uppercase   lg:justify-center lg:items-center">{"Don't just take our word for it"}</p>
 
@@ -316,8 +312,8 @@ export default function Home() {
                     <img src='/reviews/antonio_review.png' className="object-cover w-full h-full" />
                   </div>
                   <div className="flex flex-col items-start justify-center">
-                    <h4 className="font-bold text-gray-800 h-1 mt-4">Antonis Mouzourakis (Beta User)</h4>
-                    <p className="text-gray-600">Front end developer at Distic</p>
+                    <h4 className="font-bold text-gray-800 h-10 sm:h-1  mt-4">Antonis Mouzourakis (Beta User)</h4>
+                    <p className="text-gray-600 ">Front end developer at Distic</p>
                   </div>
                 </div>
                 <div className="mt-8 text-lg text-gray-500">{"\"We used to use firebase for our android app which was kind of a black box. Later, we found appwrite which was an open source alternative to firebase and so we chose netinc's appwrite serverless offering. Using it we can scale our app without any operational difficulty.\""}</div>
@@ -328,7 +324,7 @@ export default function Home() {
                     <img src='/reviews/nathan_review.png' className="object-cover w-full h-full" />
                   </div>
                   <div className="flex flex-col items-start justify-center">
-                    <h4 className="font-bold text-gray-800 h-1 mt-4">Nathan Suarez (Beta User)</h4>
+                    <h4 className="font-bold text-gray-800 h-10 sm:h-1  mt-4">Nathan Suarez (Beta User)</h4>
                     <p className="text-gray-600">Freelance Developer</p>
                   </div>
                 </div>
@@ -346,7 +342,7 @@ export default function Home() {
 
 
 
-      <div className='flex flex-col justify-center items-center space-y-2 bg-gray-50 py-10'>
+      <div className='flex flex-col px-2 justify-center items-center space-y-2 bg-gray-50 py-10'>
         <div className=' text-5xl font-bold'>Comparison</div>
         <div className='pb-8 font-bold text-primary tracking-wide text-lg uppercase'>our appwrite service compared to Firebase and Supabase</div>
 
@@ -354,11 +350,14 @@ export default function Home() {
 
         <div className=" my-20   rounded-3xl">
 
-          <div className='flex justify-center items-start   rounded-3xl border-p py-4 bg-white'>
-            <FeatureList features={comparisonFeatures} />
-            <ComparisonList features={[null, 'free', true, '15GB then $0.08 per GB', 'Free', null, true, true, true, null, '100GB then $0.012 per GB', true, 'free', null, 'free', 'free', 'free', '15 types of runtimes']} info={{ type: "Netinc's Appwrite", action: 'Start Using Now', 'function': () => { }, 'pricing': 'Starts at $9' }} />
-            <ComparisonList features={[null, 'free', true, '8GB then $0.125 per GB', '$0.09 per GB', null, true, true, true, null, '100GB then $0.021 per GB', true, '$0.09 per GB', null, false, false, false, 'SQL functions']} info={{ type: "Supabase", action: 'Know More', 'function': () => { }, 'secondary': true, 'pricing': 'Starts at $25' }} />
-            <ComparisonList features={[null, '$0.01-0.09 per 100,000', true, '1GB then $0.108 per GB', '5GB then $0.12 per GB', null, true, true, false, null, '5GB then $0.026 per GB', true, '$0.12 per GB', null, '2M then $0.4 per million', '5GB then $0.12 per GB', '$0.009 GB-hr & $0.036 GHz-hr', 'Nodejs']} info={{ type: 'Firebase', action: 'Know More', 'function': () => { }, 'secondary': true, 'pricing': 'Pay as you go' }} />
+          <div className='flex flex-col lg:flex-row justify-center items-start    rounded-3xl border-p py-4 bg-white'>
+            <div className='hidden lg:block'>
+              <FeatureList features={comparisonFeatures} />
+            </div>
+
+            <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '15GB then $0.08 per GB', 'Free', null, true, true, true, null, '100GB then $0.012 per GB', true, 'free', null, 'free', 'free', 'free', '15 types of runtimes']} info={{ type: "Netinc's Appwrite", action: 'Start Using Now', 'function': () => { }, 'pricing': 'Starts at $9' }} />
+            <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '8GB then $0.125 per GB', '$0.09 per GB', null, true, true, true, null, '100GB then $0.021 per GB', true, '$0.09 per GB', null, false, false, false, 'SQL functions']} info={{ type: "Supabase", action: 'Know More', 'function': () => { }, 'secondary': true, 'pricing': 'Starts at $25' }} />
+            <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, '$0.01-0.09 per 100,000', true, '1GB then $0.108 per GB', '5GB then $0.12 per GB', null, true, true, false, null, '5GB then $0.026 per GB', true, '$0.12 per GB', null, '2M then $0.4 per million', '5GB then $0.12 per GB', '$0.009 GB-hr & $0.036 GHz-hr', 'Nodejs']} info={{ type: 'Firebase', action: 'Know More', 'function': () => { }, 'secondary': true, 'pricing': 'Pay as you go' }} />
           </div>  </div>     </div>
       <div className='flex flex-col mt-8 items-center'>
         <div className='py-8 flex flex-col items-center space-y-2'>
@@ -369,7 +368,7 @@ export default function Home() {
 
 
 
-        <div className='  max-w-4xl'>
+        <div className='px-2  max-w-4xl'>
           <Collapse.Group>
             <Collapse title="What is a serverless infrastructure?">
               <Text>{"With servers/instances, you pay per-hour or a fixed price. With Serverless you're not charged when the service isn't in use. Netinc configures, manages and scales the services for you."}</Text>
@@ -391,10 +390,10 @@ export default function Home() {
 
 
       </div>
-      <section className="py-20 bg-gray-50 mt-20">
-        <div className="container items-center max-w-6xl px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
-          <div className="flex items-center -mx-3">
-            <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
+      <section className="pt-10 sm:py-20 bg-gray-50 mt-20 px-4 ">
+        <div className=" items-center max-w-6xl  px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
+          <div className="flex flex-col-reverse lg:flex-row  items-center -mx-3">
+            <div className="order-1 w-full lg:w-1/2 lg:order-0">
               <div className="w-full lg:max-w-md">
                 <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">All-in-one deployment & monitoring of managed auto-scaling projects</h2>
                 <p className="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">Frictionless serverless application development for everyone. Our tools will help you with the following:</p>
@@ -414,14 +413,14 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0 "><img className="mx-auto sm:max-w-sm lg:max-w-full" src="/images/feature-graphic.png" alt="feature image" /></div>
+            <div className="w-full px-3 mb-0 lg:w-1/2 order-0 lg:order-1 lg:mb-0 "><img className="mx-auto sm:max-w-sm lg:max-w-full" src="/images/feature-graphic.png" alt="feature image" /></div>
           </div>
         </div>
       </section>
 
-      <div className='bg-primary w-full h-56 flex   blur-none justify-evenly text-white text-5xl font-extrabold items-center'>
+      <div className='bg-primary w-full h-72 sm:h-56 flex flex-col sm:flex-row px-2  blur-none justify-evenly text-white text-5xl font-extrabold items-center'>
 
-        <div className='flex flex-col space-y-4'>
+        <div className='flex flex-col text-3xl md:text-5xl space-y-4 mx-4'>
           <div>
             Start Deploying Now →
           </div>

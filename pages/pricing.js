@@ -12,7 +12,7 @@ export default function About() {
 
     return (
 
-        <div className="pt-24 mt-24 flex flex-col justify-center items-center">
+        <div className="pt-24 mt-24 flex flex-col justify-center items-center px-2">
             <div className='flex w-full justify-center items-center text-6xl font-extrabold text-center px-4'>
                 {'Pricing that scales with your usage'}
             </div>
@@ -27,10 +27,12 @@ export default function About() {
             </div>
 
 
-            <div className='flex justify-center items-center my-6 border-p rounded-3xl py-5'>
-                <FeatureList features={comparisonFeatures} topButton={true} />
-                <ComparisonList features={[null, 'free', true, '15GB then $0.08 per GB', 'Free', null, true, true, true, null, '100GB then $0.012 per GB', true, 'free', null, 'free', 'free', 'free', '15 types of runtimes']} info={{ type: "Cloud", action: 'Start Using Now', 'function': () => { }, 'pricing': 'Starts at $9', 'topButton': true }} />
-                <ComparisonList features={[null, 'free', true, '8GB then $0.125 per GB', '$0.09 per GB', null, true, true, true, null, '100GB then $0.021 per GB', true, '$0.09 per GB', null, false, false, false, 'SQL functions']} info={{ type: "Cloud Enterprise", action: 'Contact Sales', 'function': () => { }, 'secondary': true, 'pricing': 'Custom', 'topButton': true }} />
+            <div className='flex flex-col lg:flex-row justify-center items-center my-6 border-p rounded-3xl py-5'>
+                <div className='hidden lg:block'>
+                    <FeatureList features={comparisonFeatures} topButton={true} />
+                </div>
+                <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '15GB then $0.08 per GB', 'Free', null, true, true, true, null, '100GB then $0.012 per GB', true, 'free', null, 'free', 'free', 'free', '15 types of runtimes']} info={{ type: "Cloud", action: 'Start Using Now', 'function': () => { }, 'pricing': 'Starts at $9', 'topButton': true }} />
+                <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '8GB then $0.125 per GB', '$0.09 per GB', null, true, true, true, null, '100GB then $0.021 per GB', true, '$0.09 per GB', null, false, false, false, 'SQL functions']} info={{ type: "Cloud Enterprise", action: 'Contact Sales', 'function': () => { }, 'secondary': true, 'pricing': 'Custom', 'topButton': true }} />
 
             </div>
 
