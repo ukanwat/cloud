@@ -1,6 +1,3 @@
-import Markdown from 'markdown-to-jsx';
-
-
 
 
 const md = `
@@ -58,15 +55,13 @@ export default function Privacy() {
             <div className='py-10 w-full pl-20 flex items-center justify-center space-x-8 bg-gray-50 border-b-p mt-32 text-base'>
                 <div className='w-200'>
 
-                    <Markdown
-                    >{md}</Markdown>
+
                 </div>
 
             </div>
 
 
             <div className="pt-10">
-                <Markdown>{'If you have any questions or suggestions regarding this Privacy Policy, please contact us at <legal@netinc.io>.'} </Markdown>
 
             </div>
 
