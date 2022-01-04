@@ -38,8 +38,8 @@ const Nav = () => {
                     </div>
                 </div>
             </Drawer>
-            <nav className={"border-b py-2 h-16 pt-4 xl:px-40 flex justify-around items-center"}>
-                <Link href={'/'}><a className='text-black'>
+            <nav className={"border-b py-2 h-12 sm:h-16 pt-4    justify-between  px-8 xl:px-40 flex  sm:justify-around items-center"}>
+                <Link href={'/'}><a className='text-black  scale-90 sm:scale-100'>
                     <div className='flex items-center'>
                         <div className='h-12 w-12'>
 
