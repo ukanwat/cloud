@@ -144,11 +144,14 @@ export default function Home() {
         <div className=' flex font-leagueSpartan w-full justify-center items-center text-3xl sm:text-4xl lg:text-6xl sm:px-0 text-center font-extrabold'>
           for web and mobile Apps
         </div>
-        <div className='px-4 text-center flex w-full justify-center items-center text-xl sm:text-2xl mt-4 sm:mt-10 font-medium text-gray-600'>
-          Create an affordable autoscaling backend in less than 5 minutes.
+        <div className='pr-4'>
+          <div className='px-4 text-center flex w-full justify-center items-center text-xl sm:text-2xl mt-4 sm:mt-10 font-medium text-gray-600'>
+            Create an affordable autoscaling backend in less than 5 minutes.
 
 
+          </div>
         </div>
+
         <div className='hidden sm:flex w-full justify-center items-center px-4  text-xl sm:text-2xl text-center mt-2 font-medium text-gray-600'>
           Start your project with Database, Authentication, Storage and Functions.
         </div>
