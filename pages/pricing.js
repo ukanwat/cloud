@@ -32,7 +32,7 @@ export default function About() {
                     <FeatureList features={comparisonFeatures} topButton={true} />
                 </div>
                 <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '15GB then $0.08 per GB', 'Free', null, true, true, true, null, '100GB then $0.012 per GB', true, 'free', null, 'free', 'free', 'free', '15 types of runtimes']} info={{ type: "Cloud", action: 'Start Using Now', 'function': () => { }, 'pricing': 'Starts at $6', 'topButton': true }} />
-                <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '8GB then $0.125 per GB', '$0.09 per GB', null, true, true, true, null, '100GB then $0.021 per GB', true, '$0.09 per GB', null, false, false, false, 'SQL functions']} info={{ type: "Cloud Enterprise", action: 'Contact Sales', 'function': () => { }, 'secondary': true, 'pricing': 'Custom', 'topButton': true }} />
+                <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '8GB then $0.125 per GB', '$0.09 per GB', null, true, true, true, null, '100GB then $0.021 per GB', true, '$0.09 per GB', null, false, false, false, 'SQL functions']} info={{ type: "Enterprise", action: 'Contact Sales', 'function': () => { }, 'secondary': true, 'pricing': 'Custom', 'topButton': true }} />
 
             </div>
 
