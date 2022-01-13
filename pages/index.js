@@ -11,7 +11,7 @@ import { ComparisonList, FeatureList, } from '../components/Comparison';
 import { pricingCard, globalCard, fastCard, puzzleCard } from '../components/SVG';
 import FeatureCard from '../components/FeatureCard'
 import GlobalTheme from '@atlaskit/theme/components';
-
+import Script from 'next/script'
 
 
 
@@ -129,8 +129,12 @@ export default function Home() {
     </div>
   )
   return (
-    <div className='pt-24 mt-10'>
 
+    <div className='pt-24 mt-10'>
+      <Script type="text/javascript" dangerouslySetInnerHTML={{
+        __html: `window.$crisp=[];window.CRISP_WEBSITE_ID="cdbf43c8-33e3-4b5d-bc84-3e883e89be30";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
+      }}
+      />
       <div className='flex w-full justify-center  items-center ml-0 pl-0 mx-2 '>
         <h1 className='text-3xl sm:text-4xl lg:text-6xl items-center justify-center flex-wrap font-extrabold flex px-2 '>
           <div className=' text-primary font-leagueSpartan text-center'>
