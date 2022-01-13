@@ -131,29 +131,11 @@ export default function Home() {
   return (
 
     <div className='pt-24 mt-10'>
-      {/* <Script id='chat support' type="text/javascript" dangerouslySetInnerHTML={{
+      <Script id='chat support' type="text/javascript" dangerouslySetInnerHTML={{
         __html: `window.$crisp=[];window.CRISP_WEBSITE_ID="cdbf43c8-33e3-4b5d-bc84-3e883e89be30";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
       }}
-      /> */}
+      />
 
-      {/* <Script id='chat support 1' type="text/javascript"
-        dangerouslySetInnerHTML={{
-          __html: `(function(d,t) {
-        var BASE_URL="localhost:3001";
-        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=BASE_URL+"/packs/js/sdk.js";
-        g.defer = true;
-        g.async = true;
-        s.parentNode.insertBefore(g,s);
-        g.onload=function(){
-          window.chatwootSDK.run({
-            websiteToken: 'o8sUg8oAHkMsJQhK7ZQeedKk',
-            baseUrl: BASE_URL
-          })
-        }
-      })(document,"script");`,
-        }}
-      /> */}
       <div className='flex w-full justify-center  items-center ml-0 pl-0 mx-2 '>
         <h1 className='text-3xl sm:text-4xl lg:text-6xl items-center justify-center flex-wrap font-extrabold flex px-2 '>
           <div className=' text-primary font-leagueSpartan text-center'>
