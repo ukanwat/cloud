@@ -131,7 +131,7 @@ export default function Home() {
   return (
 
     <div className='pt-24 mt-10'>
-      <Script type="text/javascript" dangerouslySetInnerHTML={{
+      <Script id='chat support' type="text/javascript" dangerouslySetInnerHTML={{
         __html: `window.$crisp=[];window.CRISP_WEBSITE_ID="cdbf43c8-33e3-4b5d-bc84-3e883e89be30";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
       }}
       />
