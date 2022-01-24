@@ -25,7 +25,7 @@ export default function About() {
 
             <div className='py-20 flex items-start md:space-x-8 mb-10 flex-col space-y-8 md:space-y-0 md:flex-row'>
                 <div className=' space-y-2 flex flex-col justify-center items-center'>
-                    <img width={80} src={'https://storage.googleapis.com/NetInc/codeAbout.png'} />
+                    <img width={80} src={'https://storage.googleapis.com/netinc/codeAbout.png'} />
                     <div className=' font-bold text-xl'>
                         Quick
                     </div>
@@ -35,7 +35,7 @@ export default function About() {
                 </div>
 
                 <div className=' space-y-2 flex flex-col justify-center items-center'>
-                    <img width={80} src={'https://storage.googleapis.com/NetInc/registryAbout.png'} />
+                    <img width={80} src={'https://storage.googleapis.com/netinc/registryAbout.png'} />
                     <div className=' font-bold text-xl'>
                         Simple
                     </div>
@@ -44,7 +44,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className=' space-y-2 flex flex-col justify-center items-center '>
-                    <img width={80} src={'https://storage.googleapis.com/NetInc/handAbout.png'} />
+                    <img width={80} src={'https://storage.googleapis.com/netinc/handAbout.png'} />
                     <div className=' font-bold text-xl'>
                         Amazing
                     </div>

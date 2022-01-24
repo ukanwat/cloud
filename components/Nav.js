@@ -25,7 +25,7 @@ const Nav = () => {
                         <Link href={'/pricing'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>Pricing</a></Link>
                         <Link href={'/about'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>About</a></Link>
                         <Link href={'/contact'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>Contact</a></Link>
-                        <Tooltip text={'Appwrite Documentation'} placement="bottom"> <Link href={'https://appwrite.io/docs/sdks'}><a target="_blank" className='text-gray-600 hover:text-gray-900 hover:underline'>  <div className='flex'>
+                        <Tooltip text={'Product Documentation'} placement="bottom"> <Link href={'https://docs.netinc.io'}><a target="_blank" className='text-gray-600 hover:text-gray-900 hover:underline'>  <div className='flex'>
 
                             Docs
                             <div className='mt-0.5'>
