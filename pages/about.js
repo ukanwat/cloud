@@ -5,33 +5,27 @@ export default function About() {
 
     return (
 
-        <div className="pt-24 mt-32 flex flex-col justify-center items-center">
-            <div className='flex w-full justify-center items-center text-6xl font-extrabold'>
-                {'Make Backend the Easiest'}
-            </div>
-            <div className='flex w-full justify-center items-center text-6xl  font-extrabold'>
-                {'Part of Your Job'}
+        <div className="pt-24 mt-14 md:mt-24 flex flex-col justify-center items-center px-2">
+            <div className='flex w-full md:w-200 lg:w-300 text-center justify-center items-center text-3xl  sm:text-4xl lg:text-6xl font-extrabold'>
+                {'Deploy and manage highly scalable applications on a fully managed serverless platform.'}
             </div>
 
 
 
-            <div className='flex w-full justify-center items-center text-2xl mt-10 font-medium text-gray-600'>
-                We manage everything for you
+            <div className='flex w-full md:w-200 justify-center items-center text-xl sm:text-2xl mt-10 font-medium text-gray-600'>
+                We manage everything for you.
 
 
 
 
             </div>
-            <div className='flex w-full justify-center items-center text-2xl mt-2 font-medium text-gray-600'>
-                So, you can focus on more important things.
-            </div>
-            <div className='flex w-full justify-center items-center text-2xl mt-2 font-medium text-gray-600'>
-                With Usage based pricing, you only pay for what you use.
+            <div className='flex w-full justify-center text-center md:w-200 items-center text-xl sm:text-2xl mt-0 font-medium text-gray-600'>
+                So, you can focus on more important things. With Usage based pricing, you only pay for what you use.
             </div>
 
-            <div className='py-20 flex items-start space-x-8 mb-10'>
+            <div className='py-20 flex items-start md:space-x-8 mb-10 flex-col space-y-8 md:space-y-0 md:flex-row'>
                 <div className=' space-y-2 flex flex-col justify-center items-center'>
-                    <img width={80} src={'https://storage.googleapis.com/netinc/codeAbout.png'} />
+                    <img width={80} src={'https://storage.googleapis.com/NetInc/codeAbout.png'} />
                     <div className=' font-bold text-xl'>
                         Quick
                     </div>
@@ -41,7 +35,7 @@ export default function About() {
                 </div>
 
                 <div className=' space-y-2 flex flex-col justify-center items-center'>
-                    <img width={80} src={'https://storage.googleapis.com/netinc/registryAbout.png'} />
+                    <img width={80} src={'https://storage.googleapis.com/NetInc/registryAbout.png'} />
                     <div className=' font-bold text-xl'>
                         Simple
                     </div>
@@ -50,7 +44,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className=' space-y-2 flex flex-col justify-center items-center '>
-                    <img width={80} src={'https://storage.googleapis.com/netinc/handAbout.png'} />
+                    <img width={80} src={'https://storage.googleapis.com/NetInc/handAbout.png'} />
                     <div className=' font-bold text-xl'>
                         Amazing
                     </div>

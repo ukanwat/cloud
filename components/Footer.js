@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import React from 'react';
-import { ArrowUpRight } from '@geist-ui/react-icons'
+import { AlertCircleFill, ArrowUpRight } from '@geist-ui/react-icons'
+import Script from 'next/script';
 const Footer = () => {
 
     return (
-        <div className=" pt-5 flex flex-col items-center justify-center space-y-8 bottom-0 h-96 bg-gray-50 w-screen mt-0">
+        <div className="border-t-p pt-5 flex flex-col items-center justify-center space-y-8 bottom-0 h-64  bg-white w-screen mt-0">
+
             <div className='flex'>
                 <div className='h-12 w-12'>
 
@@ -60,16 +62,21 @@ const Footer = () => {
 
                 </div>
                 </a></Link>
+
+                <Link href={'https://status.netinc.io'}><a target="_blank" className='pl-2 bg-white rounded-md border-p items-center flex text-gray-600 w-20 mr-20 justify-start hover:text-gray-900 hover:underline'>  <div className='flex'>
+
+                    Status:
+                    <div className='mt-2 ml-2 h-2.5 w-2.5 rounded-full bg-primary'>
+
+                    </div>
+
+                </div>
+                </a></Link>
+
             </div>
             <div className='px-2'>   <div className='text-lg px-2 text-center'>
-                © 2022 Netinc. All rights reserved.
+                © 2022 NetInc. All rights reserved.
             </div></div>
-            <div className='px-2'>
-                <div className='w-full sm:w-150 text-sm text-gray-500 text-center  pb-5'>
-                    * Appwrite is a trademark of APPWRITE CODE LTD. Any rights therein are reserved to APPWRITE CODE LTD. Any use by Netinc is for referential purposes only and does not indicate any sponsorship, endorsement or affiliation between Appwrite and Netinc.
-                </div>
-            </div>
-
 
 
 

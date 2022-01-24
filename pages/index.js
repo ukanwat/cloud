@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button, Popover, Spacer, Collapse, Text, Divider } from '@geist-ui/react'
+import { Button, Popover, Spacer, Collapse, Text, Divider, Slider } from '@geist-ui/react'
 import { server } from '../config'
 import { CodeBlock } from '@atlaskit/code';
 import ReviewCard from '../components/ReviewCard'
 import { ChevronDown, Database, Key, HardDrive, FileFunction } from '@geist-ui/react-icons'
 import { useState } from 'react';
 import { ComparisonList, FeatureList, } from '../components/Comparison';
-import { pricingCard, globalCard, fastCard, puzzleCard } from '../components/SVG';
+import { pricingCard, globalCard, fastCard, puzzleCard, CloudRun, Fargate, Logo } from '../components/SVG';
 import FeatureCard from '../components/FeatureCard'
 import GlobalTheme from '@atlaskit/theme/components';
 import Script from 'next/script'
@@ -94,7 +94,12 @@ sdk.account.create('me@example.com', 'password', 'Jane Doe')
 
 
 export default function Home() {
-
+  const initRam = 1;
+  const initCpu = 1;
+  const initReq = 1;
+  const [ram, setRam] = useState(initRam)
+  const [cpu, setCpu] = useState(initCpu)
+  const [req, setReq] = useState(initReq)
 
   const comparisonFeatures = [{ 'name': "Database", 'section': true, 'icon': <Database /> }, { 'name': "Api Requests", 'info': 'Read, write, or delete requests to the database' }, { 'name': "Realtime functionality", 'info': 'Realtime allows you to listen to any events on the server-side in realtime' }, { 'name': "Database space", }, { 'name': "Transfer Limits", },
   { 'name': "Authentication", 'section': true, 'icon': <Key /> }, { 'name': "Unlimited Users", }, { 'name': "Custom SMTP server", 'info': 'Mail server that you can use to send emails' }, { 'name': "Audit logs", },
@@ -212,7 +217,7 @@ export default function Home() {
 
       <section className=" mt-20 bg-white px-2">
         <div className="max-w-7xl px-10 mx-auto sm:text-center">
-          <p className="text-blue-500 font-bold text-lg tracking-wide uppercase">Our serverless Offerings</p>
+          <p className="text-blue-500 font-normal text-lg tracking-wide uppercase">Our serverless Offerings</p>
           <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl mt-3">Serverless Products We Manage For You</h2>
           <p className="mt-4 text-gray-500 text-base sm:text-xl lg:text-2xl"><br className="lg:hidden hidden sm:block" />{"Check'em out below 👇"}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
@@ -283,13 +288,13 @@ export default function Home() {
 
       <div className='py-10 flex flex-col mt-20 items-center bg-gray-50 mb-0 px-12 pr-16 sm:pr-10 justify-center'>
         <div className='text-3xl sm:text-4xl lg:text-5xl font-bold pb-4 w-full sm:w-96 sm:pl-8'>Core Features</div>
-        <div className='  pb-8 font-bold text-primary tracking-wide text-lg uppercase'>Features which define our infrastructure</div>
+        <div className='  pb-8 font-normal text-primary tracking-wide text-lg uppercase'>Features which define our infrastructure</div>
 
         <div className=' grid grid-col-1 lg:grid-cols-2 my-8'>
           <FeatureCard icon={pricingCard()} title={"Usage based pricing"} data={'We only charge by the amount of storage you are using. Network egress and Compute time is totally free.'} />
           <FeatureCard icon={globalCard()} title={"Global Low Latency"} data={'With Global Appwrite Instances, you can access your database from anywhere with very low latency.'} />
           <FeatureCard icon={fastCard()} title={"Ultra fast machines"} data={'We run your instances on dedicated machines with NVMe to acheive the best performance.'} />
-          <FeatureCard icon={puzzleCard()} title={"Easier Integration"} data={'Using Netinc you can benefit from our software ecosystem with easier integration.'} />
+          <FeatureCard icon={puzzleCard()} title={"Easier Integration"} data={'Using NetInc you can benefit from our software ecosystem with easier integration.'} />
 
 
         </div>
@@ -306,7 +311,7 @@ export default function Home() {
       <section className="flex items-center px-2 justify-center pb-14 pt-10 bg-white min-w-screen">
         <div className="px-4 bg-white">
           <div className="container flex flex-col items-start mx-auto lg:items-center">
-            <p className="relative flex items-start justify-start w-full font-bold text-primary tracking-wide text-lg uppercase   lg:justify-center lg:items-center">{"Don't just take our word for it"}</p>
+            <p className="relative flex items-start justify-start w-full font-normal text-primary tracking-wide text-lg uppercase   lg:justify-center lg:items-center">{"Don't just take our word for it"}</p>
 
 
             <h2 className="relative flex items-start justify-start w-full max-w-3xl text-5xl font-bold lg:justify-center">
@@ -328,7 +333,7 @@ export default function Home() {
                     <p className="text-gray-600 ">Front end developer at Distic</p>
                   </div>
                 </div>
-                <div className="mt-8 text-lg text-gray-500">{"\"We used to use firebase for our android app which was kind of a black box. Later, we found appwrite which was an open source alternative to firebase and so we chose netinc's appwrite serverless offering. Using it we can scale our app without any operational difficulty.\""}</div>
+                <div className="mt-8 text-lg text-gray-500">{"\"We used to use firebase for our android app which was kind of a black box. Later, we found appwrite which was an open source alternative to firebase and so we chose NetInc's appwrite serverless offering. Using it we can scale our app without any operational difficulty.\""}</div>
               </div>
               <div className="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
                 <div className="flex items-center justify-center">
@@ -340,7 +345,7 @@ export default function Home() {
                     <p className="text-gray-600">Freelance Developer</p>
                   </div>
                 </div>
-                <div className="mt-8 text-lg text-gray-500">{"\"Netinc is awesome. It is a lot cheaper than any other backend service I've used. And the best part is that it's serverless which makes it crazy scalable without any overhead. My clients love it too.\""}</div>
+                <div className="mt-8 text-lg text-gray-500">{"\"NetInc is awesome. It is a lot cheaper than any other backend service I've used. And the best part is that it's serverless which makes it crazy scalable without any overhead. My clients love it too.\""}</div>
               </div>
 
             </div>
@@ -356,7 +361,7 @@ export default function Home() {
 
       <div className='flex flex-col px-2 justify-center items-center space-y-2 bg-gray-50 py-10'>
         <div className=' text-5xl font-bold justify-start'>Comparison</div>
-        <div className='pb-8 font-bold text-primary tracking-wide text-lg uppercase'>Our appwrite service compared to Firebase and Supabase</div>
+        <div className='pb-8 font-normal text-primary tracking-wide text-lg uppercase'>Comparison with Cloud Run & Fargate</div>
 
 
 
@@ -373,11 +378,65 @@ export default function Home() {
               info={{ type: "Supabase", action: 'Know More', 'function': () => { }, 'secondary': true, 'pricing': 'Starts at $25' }} />
             <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, '$0.01-0.09 per 100,000', true, '1GB then $0.108 per GB', '5GB then $0.12 per GB', null, true, true, false, null, '5GB then $0.026 per GB', true, '$0.12 per GB', null, '2M then $0.4 per million', '5GB then $0.12 per GB', '$0.009 GB-hr & $0.036 GHz-hr', 'Nodejs']}
               info={{ type: 'Firebase', action: 'Know More', 'function': () => { }, 'secondary': true, 'pricing': 'Pay as you go' }} />
-          </div>  </div>     </div>
+          </div>
+
+
+        </div>
+        <div className='h-5'></div>
+        <div className='px-3 lg:px-0'>
+
+
+          <div className='rounded-3xl bg-gray-100 w-80 md:w-150 mx-2 lg:w-250  flex flex-col lg:flex-row justify-center px-8 space-x-0 lg:space-x-5 my-8'>
+            <div className=' w-80 md:w-150 lg:w-200 space-y-2 pt-10'>
+              <div className='flex   items-center'>
+                <div className='w-44 pr-7 text-gray-500'>  CPU Usage in million vCPU-s</div>
+
+                <Slider type="success" initialValue={initCpu} onChange={(n) => { setCpu(n) }} min={1} max={50} step={1} />
+                <Spacer />      </div>
+              <div className='flex  items-center'>
+                <div className='w-44 pr-7 text-gray-500'>  RAM Usage in million GB-s</div>
+
+                <Slider type="success" initialValue={initRam} onChange={(n) => { setRam(n) }} min={1} max={128} step={1} />
+                <Spacer />
+              </div>
+
+              <div className='flex  items-center'>
+                <div className='w-44 pr-7 text-gray-500'>Requests Usage in millions</div>
+
+                <Slider type="success" initialValue={initReq} onChange={(n) => { setReq(n) }} min={1} max={1000} step={1} />
+                <Spacer /> </div>  </div>
+
+
+            <div className='w-80 md:w-150 scale-90 lg:scale-100 lg:w-200 flex flex-col  space-y-5 md:space-y-0 md:flex-row justify-between py-10  '>
+              <div className='flex flex-col items-center '>
+
+                <Fargate />
+
+
+                <div className='font-semibold pt-2'>AWS Fargate</div>
+
+                <div className='text-gray-500 text-xl'>{'$'}{(11.2 * cpu + 1.23 * ram).toFixed(2)}</div>
+              </div>
+              <div className='flex flex-col items-center ' >
+                <CloudRun />  <div className='font-semibold pt-2'>GCP Cloud Run</div>
+
+                <div className='text-gray-500 text-xl'>{'$'}{(24 * cpu + 2.5 * ram + 0.4 * req).toFixed(2)}</div></div>
+
+
+              <div className='flex flex-col items-center pl-4' >
+                <Logo />  <div className='font-semibold pt-2'>NetInc Serverless</div>
+
+                <div className='text-gray-500 text-xl'>{'$'}{(4 * cpu + 1 * ram + 0 * req).toFixed(2)}</div></div>
+
+
+            </div>
+
+          </div> </div>
+      </div>
       <div className='flex flex-col mt-8 items-center'>
         <div className='py-8 flex flex-col items-center space-y-2'>
           <div className=' text-5xl font-bold'>FAQ</div>
-          <div className='font-bold text-primary tracking-wide text-lg uppercase   '>Frequently Asked Questions</div>
+          <div className='font-normal text-primary tracking-wide text-lg uppercase   '>Frequently Asked Questions</div>
         </div>
 
 
@@ -386,17 +445,14 @@ export default function Home() {
         <div className='px-2  max-w-4xl'>
           <Collapse.Group>
             <Collapse title="What is a serverless infrastructure?">
-              <Text>{"With servers/instances, you pay per-hour or a fixed price. With Serverless you're not charged when the service isn't in use. Netinc configures, manages and scales the services for you."}</Text>
+              <Text>{"With servers/instances, you pay per-hour or a fixed price. With Serverless you're not charged when the service isn't in use. NetInc configures, manages and scales the services for you."}</Text>
             </Collapse>
-            <Collapse title="How does Netinc compare to self hosted appwrite instance?">
-              <Text>{"Most self hosted appwrite instances aren't scalable, highly available or dependable because they are available on a single node. If you setup appwrite with kubernetes it becomes very complicated and hard to manage. What we provide can resolve all of these issues with lower costs than self hosting on other cloud providers. Netinc provides managed apperite instances which gives your users very low latency. Moreover, we provide enterprise cloud solutions which simply Isn't possible possible when you host on your own."}</Text>
-            </Collapse>
-            <Collapse title="How affordable is netinc?">
+            <Collapse title="How affordable is NetInc?">
               <Text>{"We run our services on servers provided by our low cost vendor which makes our services accessible to anyone."}</Text>
             </Collapse>
             <Collapse title="Can I export my data?
 ">
-              <Text>Yes. You have full access to whatever services you use. If you decide to leave and want to export all your data, we will help you. Netinc has no vendor lock-in.
+              <Text>Yes. You have full access to whatever services you use. If you decide to leave and want to export all your data, we will help you. NetInc has no vendor lock-in.
               </Text>
             </Collapse>
           </Collapse.Group>
@@ -415,7 +471,7 @@ export default function Home() {
                 <ul>
                   <li className="flex items-center py-2 space-x-4 xl:py-3">
                     <svg className="w-8 h-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
-                    <span className="font-medium text-gray-500">Faster Processing and Delivery</span>
+                    <span className="font-medium text-gray-500">Faster Processing and Deployments</span>
                   </li>
                   <li className="flex items-center py-2 space-x-4 xl:py-3">
                     <svg className="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
@@ -441,7 +497,7 @@ export default function Home() {
           </div>
 
           <div className=' text-white text-opacity-75 text-lg font-normal'>
-            Your Serverless app backend within 5 minutes
+            Your Serverless application within 5 minutes
           </div>
         </div>
         <Button type='secondary' onClick={() => { window.location.assign(server) }} >Create Account(Coming Soon)</Button>

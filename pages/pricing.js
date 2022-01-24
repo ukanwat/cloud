@@ -12,17 +12,16 @@ export default function About() {
 
     return (
 
-        <div className="pt-24 mt-24 flex flex-col justify-center items-center px-2">
-            <div className='flex w-full justify-center items-center text-6xl font-extrabold text-center px-4'>
-                {'Pricing that scales with your usage'}
+        <div className="pt-10 md:pt-24 mt-24 flex flex-col justify-center items-center px-2">
+
+
+
+            <div className='flex px-2 text-center w-full justify-center items-center text-4xl  lg:text-6xl font-extrabold'>
+                Pricing that scales with your usage
             </div>
 
-
-            <div className='flex w-full justify-center items-center text-2xl my-5 font-medium text-gray-600'>
-                Scale to millions with fully Managed Appwrite on Netinc Cloud.
-
-
-
+            <div className='flex w-full text-center justify-center items-center text-xl lg:text-2xl mt-2 font-medium text-gray-600'>
+                Scale to millions with fully Managed Appwrite on NetInc Cloud.
 
             </div>
 
@@ -37,7 +36,7 @@ export default function About() {
             </div>
 
 
-            <div className='flex flex-col mt-20 items-center border-t-p w-full'>
+            <div className='flex flex-col mt-20 items-center  w-full bg-gray-50'>
                 <div className='py-8 flex flex-col items-center space-y-2'>
                     <div className=' text-5xl font-bold'>FAQ</div>
                     <div className=' text-xl text-gray-500'>Frequently Asked Questions</div>
@@ -64,11 +63,11 @@ export default function About() {
                         <Collapse title="Do you offer free trial?">
                             <Text>No, currently as of now we do not provide any kind of free trial because our cloud plans are already pretty affordable.</Text>
                         </Collapse>
-                        <Collapse title="What kind of support does Netinc provide?">
-                            <Text>If you have the cloud plan you can get support by email at support@netinc.io. And for enterprise plan we provide 24x7 support.</Text>
+                        <Collapse title="What kind of support does NetInc provide?">
+                            <Text>If you have the cloud plan you can get support by email at support@NetInc.io. And for enterprise plan we provide 24x7 support.</Text>
                         </Collapse>
-                        <Collapse title="Where can I get the Netinc's privacy policy and Terms?">
-                            <Text>You can read the Privacy policy  and terms of service at https://netinc.io/legal/privacy and https://netinc.io/legal/terms respectively.</Text>
+                        <Collapse title="Where can I get the NetInc's privacy policy and Terms?">
+                            <Text>You can read the Privacy policy  and terms of service at https://NetInc.io/legal/privacy and https://NetInc.io/legal/terms respectively.</Text>
                         </Collapse>
                         <Collapse title="Are there any limits on data transfer?">
                             <Text>No, unlike most of the cloud providers our data egress and ingress are totally free with no limits. </Text>
