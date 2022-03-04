@@ -46,9 +46,7 @@ sdk
 // Register User
 sdk.account.create('me@example.com', 'password', 'Jane Doe')
     .then(function (response) {
-        console.log(response);
     }, function (error) {
-        console.log(error);
     });`,
 
   'swift': `import io.appwrite.Client
@@ -136,46 +134,50 @@ export default function Home() {
   return (
 
     <div className='pt-24 mt-10'>
-      <Script id='chat support' type="text/javascript" dangerouslySetInnerHTML={{
-        __html: `window.$crisp=[];window.CRISP_WEBSITE_ID="cdbf43c8-33e3-4b5d-bc84-3e883e89be30";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
-      }}
+      <Script id='chat support' type="text/javascript"
+
+
+        // dangerouslySetInnerHTML={{
+        //   __html: `window.$crisp=[];window.CRISP_WEBSITE_ID="cdbf43c8-33e3-4b5d-bc84-3e883e89be30";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
+        // }}
+        src='https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/90be7d04fb9c43a4967ca1b35f87e2f5ad572e3dc0ab4a71ae5455f4a948cf2e.js'
+
       />
 
-      <div className='flex w-full justify-center  items-center ml-0 pl-0 mx-2 '>
-        <h1 className='text-3xl sm:text-4xl lg:text-6xl items-center justify-center flex-wrap font-extrabold flex px-2 '>
-          <div className=' text-primary font-leagueSpartan text-center'>
-            {'Serverless Managed Services'}
+      <div className='flex flex-col w-full justify-center space-y-4  py-5 items-center ml-0 pl-0 mx-2 '>
+        <h1 className='text-3xl sm:text-4xl lg:text-7xl items-center justify-center flex-wrap font-extrabold flex px-2 '>
+
+          {'Deploy your apps'}
+
+
+
+        </h1>
+        <h1 className='text-3xl sm:text-4xl lg:text-7xl items-center justify-center flex-wrap font-extrabold flex px-2 '>
+          <div className=' text-blue-600  text-center'>
+            {'Serverlessly @ edge'}
           </div>
+
 
 
         </h1>
       </div>
       <div className='px-2'>
-        <div className=' flex font-leagueSpartan w-full justify-center items-center text-3xl sm:text-4xl lg:text-6xl sm:px-0 text-center font-extrabold'>
-          for web and mobile Apps
-        </div>
+
         <div className='pr-4'>
           <div className='px-4 text-center flex w-full justify-center items-center text-xl sm:text-2xl mt-4 sm:mt-10 font-medium text-gray-600'>
-            Create an affordable autoscaling backend in less than 5 minutes.
+            Deploy a serverless app in less than 2 minutes.
 
 
           </div>
         </div>
 
-        <div className='hidden sm:flex w-full justify-center items-center px-4  text-xl sm:text-2xl text-center mt-2 font-medium text-gray-600'>
-          Start your project with Database, Authentication, Storage and Functions.
-        </div>
-
-        <div className='flex w-full  text-xl sm:text-2xl justify-center items-center  text-center mt-2 text-black font-bold'>
-          Appwrite is open source so, No vendor lock-in.
-        </div>
       </div>
 
 
 
 
       <div className='flex w-full px-2 justify-center items-center py-12 font-medium space-y-2 sm:space-y-0 sm:space-x-4 flex-col sm:flex-row'>
-        <Button auto type="success">Get Started(coming soon)</Button>  <Link href={'https://appwrite.io/'}  ><a target="_blank"><Button auto type="">Read more about Appwrite</Button></a></Link>
+        <Button auto type="success">Get Started(coming soon)</Button>  <Link href={'https://docs.netinc.io/'}  ><a target="_blank"><Button auto type="">Read more</Button></a></Link>
 
       </div>
       <div className='flex flex-col px-2 lg:flex-row space-y-12 justify-center items-center space-x-10'>
@@ -203,7 +205,7 @@ export default function Home() {
 
         <div className='
         flex flex-col w-full sm:w-120 md:w-150 space-y-10'>
-          <Feature text={'Read/Write latency of less than 3 ms.'} />
+          <Feature text={'Average latency of 30ms.'} />
           <Feature text={'Replicated instances across multiple datacenters around the world.'} />
           <Feature text={'Autoscaling Serverless Infrastructure.'} />
 
@@ -488,20 +490,25 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className='px-10 py-10 bg-gray-50'>
+        <div className='
+  shadow-xl shadow-blue-200
+      rounded-xl
+  bg-primary w-full h-72 sm:h-56 flex flex-col sm:flex-row  blur-none justify-evenly text-white text-5xl font-extrabold items-center'>
 
-      <div className='bg-primary w-full h-72 sm:h-56 flex flex-col sm:flex-row px-2  blur-none justify-evenly text-white text-5xl font-extrabold items-center'>
+          <div className='flex flex-col text-3xl md:text-5xl space-y-4 mx-4'>
+            <div>
+              Start Deploying Now →
+            </div>
 
-        <div className='flex flex-col text-3xl md:text-5xl space-y-4 mx-4'>
-          <div>
-            Start Deploying Now →
+            <div className=' text-white text-opacity-75 text-lg font-normal'>
+              Your Serverless application within 2 minutes
+            </div>
           </div>
-
-          <div className=' text-white text-opacity-75 text-lg font-normal'>
-            Your Serverless application within 5 minutes
-          </div>
+          <Button type='secondary' onClick={() => { window.location.assign(server) }} >Create Account(Coming Soon)</Button>
         </div>
-        <Button type='secondary' onClick={() => { window.location.assign(server) }} >Create Account(Coming Soon)</Button>
       </div>
+
 
 
 

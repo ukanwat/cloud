@@ -17,7 +17,7 @@ const Nav = () => {
 
 
     return (
-        <header className="fixed top-0 z-999 w-full shadow-none shadow-transparent backdrop-blur-lg bg-white/40">
+        <header className="fixed top-0 z-999 w-full shadow-none shadow-transparent backdrop-blur-lg bg-white/60">
             <Drawer visible={menuState} onClose={() => setMenuState(false)} placement="top">
                 <div className='flex flex-col items-center'><div className='rounded-lg bg-black px-3 py-2 text-white h-10 w-44'>Console (soon)</div>
                     <div className='flex flex-col justify-between  items-start space-y-4 pt-4  w-14 sm:space-x-10 '>

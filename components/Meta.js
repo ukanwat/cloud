@@ -25,7 +25,7 @@ const Meta = ({ title, keywords, description }) => {
 }
 
 Meta.defaultProps = {
-    title: 'NetInc',
+    title: 'NetInc - Internet Incorporated',
     keywords: 'Cloud Servers, NetInc, Supabase, Firebase Alternative, VPS, Managed Supabase',
     description: 'NetInc provides an Enterprise-class Cloud platform to Developers, which helps them deploy, run and scale applications effortlessly.',
 }
