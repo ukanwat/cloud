@@ -25,7 +25,7 @@ const Footer = () => {
 
                 <div className='flex flex-col space-y-0 font-extrabold text-3xl items-center'>
 
-                    <div className='font-bold text-xl h-5'>NetInc</div>
+                    <div className='font-bold text-xl h-5'>Coplane</div>
                     <div className='font-light text-lg h-5'>CLOUD</div>
                 </div>
 
@@ -63,7 +63,7 @@ const Footer = () => {
                 </div>
                 </a></Link>
 
-                <Link href={'https://status.netinc.io'}><a target="_blank" className='pl-2 bg-white rounded-md border-p items-center flex text-gray-600 w-20 mr-20 justify-start hover:text-gray-900 hover:underline'>  <div className='flex'>
+                <Link href={'https://status.Coplane.io'}><a target="_blank" className='pl-2 bg-white rounded-md border-p items-center flex text-gray-600 w-20 mr-20 justify-start hover:text-gray-900 hover:underline'>  <div className='flex'>
 
                     Status:
                     <div className='mt-2 ml-2 h-2.5 w-2.5 rounded-full bg-primary'>
@@ -75,7 +75,7 @@ const Footer = () => {
 
             </div>
             <div className='px-2'>   <div className='text-lg px-2 text-center'>
-                © 2022 NetInc. All rights reserved.
+                © 2022 Coplane. All rights reserved.
             </div></div>
 
 

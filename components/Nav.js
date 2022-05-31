@@ -25,7 +25,7 @@ const Nav = () => {
                         <Link href={'/pricing'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>Pricing</a></Link>
                         <Link href={'/about'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>About</a></Link>
                         <Link href={'/contact'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>Contact</a></Link>
-                        <Tooltip text={'Product Documentation'} placement="bottom"> <Link href={'https://docs.netinc.io'}><a target="_blank" className='text-gray-600 hover:text-gray-900 hover:underline'>  <div className='flex'>
+                        <Tooltip text={'Product Documentation'} placement="bottom"> <Link href={'https://docs.Coplane.io'}><a target="_blank" className='text-gray-600 hover:text-gray-900 hover:underline'>  <div className='flex'>
 
                             Docs
                             <div className='mt-0.5'>
@@ -38,27 +38,54 @@ const Nav = () => {
                     </div>
                 </div>
             </Drawer>
-            <nav className={"border-b py-2 h-12 sm:h-16 pt-4    justify-between  px-8 xl:px-40  flex  md:justify-around items-center"}>
+            <nav className={"border-b  h-10 sm:h-10 py-3    justify-between  px-8 xl:px-40  flex  md:justify-around items-center"}>
                 <Link href={'/'}><a className='text-black  scale-90 sm:scale-100'>
-                    <div className='flex items-center'>
-                        <div className='h-12 w-12'>
+                    <div className='flex items-center scale-75'>
 
-                            <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <svg
+                            viewBox="0 0 200 200"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlSpace="preserve"
+                            style={{
+                                fillRule: "evenodd",
+                                clipRule: "evenodd",
+                                strokeLinecap: "round",
+                            }}
+                            width="3em"
+                            height="3em"
+                            className='mt-3 pr-1 '
+                        >
+                            <path
+                                style={{
+                                    fill: "none",
+                                }}
+                                d="M61.09 105.382h213.461v202.062H61.09z"
+                                transform="translate(-61.09 -105.382)"
+                            />
+                            <path
+                                d="M-64.858 52.28 15.33-52.28h49.528L-18.475 52.28h-46.383Z"
+                                style={{
+                                    fillRule: "nonzero",
+                                    stroke: "#000",
+                                    strokeWidth: 1,
+                                }}
+                                transform="matrix(1.13 -.24 .21 .98 75.69 83.82)"
+                            />
+                            <path
+                                d="M-64.858 52.28 15.33-52.28h49.528L-18.475 52.28h-46.383Z"
+                                style={{
+                                    fillRule: "nonzero",
+                                    stroke: "#000",
+                                    strokeWidth: 1,
+                                }}
+                                transform="matrix(1.1 -.23 .21 .98 134.43 115.8)"
+                            />
+                        </svg>
 
-                                <g>
-                                    <ellipse ry="18" rx="18" id="svg_1" cy="24" cx="24" stroke="#000" fill="#05b" strokeWidth="0">
 
-                                    </ellipse>
-                                    <ellipse ry="15" rx="15" id="svg_2" cy="24" cx="24" stroke="#000" fill="#08f" strokeWidth="0" />
-                                    <ellipse ry="11.5" rx="11.5" id="svg_3" cy="24" cx="24" stroke="#000" fill="#0bf" strokeWidth="0" />
-                                    <ellipse ry="8" rx="8" id="svg_3" cy="24" cx="24" stroke="#000" fill="#fff" strokeWidth="0" />
-                                </g>
-                            </svg>
-                        </div>
+                        <div className='flex space-y-0 justify-center  mb-3 text-5xl items-center'>
 
-                        <div className='flex space-y-0 justify-center mb-3  font-leagueSpartan  text-5xl items-center'>
-
-                            <div className='font-bold  text-3xl h-5'>NetInc</div>
+                            <div className='font-bold  text-4xl h-5'>Coplane</div>
                         </div>
 
                     </div>
@@ -68,7 +95,7 @@ const Nav = () => {
                     <Link href={'/pricing'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>Pricing</a></Link>
                     <Link href={'/about'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>About</a></Link>
                     <Link href={'/contact'}><a className='text-gray-600 hover:text-gray-900 hover:underline'>Contact</a></Link>
-                    <Tooltip text={'Product Documentation'} placement="bottom"> <Link href={'https://docs.netinc.io'}><a target="_blank" className='text-gray-600 hover:text-gray-900 hover:underline'>  <div className='flex'>
+                    <Tooltip text={'Product Documentation'} placement="bottom"> <Link href={'https://docs.Coplane.io'}><a target="_blank" className='text-gray-600 hover:text-gray-900 hover:underline'>  <div className='flex'>
 
                         Docs
                         <div className='mt-0.5'>
@@ -79,7 +106,7 @@ const Nav = () => {
                     </a></Link></Tooltip>
 
                 </div>
-                <div className='rounded-lg bg-black px-3 py-2 text-white h-6 hidden md:block'>Console</div>
+                <div className='rounded-lg bg-black px-3 py-2 text-white h-5 text-sm hidden md:block'>Console</div>
                 <button className='md:hidden block' onClick={() => { setMenuState(true) }}>
                     <svg height="32px" id="Layer_1" style={{ enableBackground: 'new 0 0 32 32' }} version="1.1" viewBox="0 0 32 32" width="32px" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" /></svg>
                 </button>

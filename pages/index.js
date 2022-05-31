@@ -177,7 +177,7 @@ export default function Home() {
 
 
       <div className='flex w-full px-2 justify-center items-center py-12 font-medium space-y-2 sm:space-y-0 sm:space-x-4 flex-col sm:flex-row'>
-        <Button auto type="success">Get Started(coming soon)</Button>  <Link href={'https://docs.netinc.io/'}  ><a target="_blank"><Button auto type="">Read more</Button></a></Link>
+        <Button auto type="success">Get Started(coming soon)</Button>  <Link href={'https://docs.Coplane.io/'}  ><a target="_blank"><Button auto type="">Read more</Button></a></Link>
 
       </div>
       <div className='flex flex-col px-2 lg:flex-row space-y-12 justify-center items-center space-x-10'>
@@ -296,7 +296,7 @@ export default function Home() {
           <FeatureCard icon={pricingCard()} title={"Usage based pricing"} data={'We only charge by the amount of storage you are using. Network egress and Compute time is totally free.'} />
           <FeatureCard icon={globalCard()} title={"Global Low Latency"} data={'With Global Appwrite Instances, you can access your database from anywhere with very low latency.'} />
           <FeatureCard icon={fastCard()} title={"Ultra fast machines"} data={'We run your instances on dedicated machines with NVMe to acheive the best performance.'} />
-          <FeatureCard icon={puzzleCard()} title={"Easier Integration"} data={'Using NetInc you can benefit from our software ecosystem with easier integration.'} />
+          <FeatureCard icon={puzzleCard()} title={"Easier Integration"} data={'Using Coplane you can benefit from our software ecosystem with easier integration.'} />
 
 
         </div>
@@ -335,7 +335,7 @@ export default function Home() {
                     <p className="text-gray-600 ">Front end developer at Distic</p>
                   </div>
                 </div>
-                <div className="mt-8 text-lg text-gray-500">{"\"We used to use firebase for our android app which was kind of a black box. Later, we found appwrite which was an open source alternative to firebase and so we chose NetInc's appwrite serverless offering. Using it we can scale our app without any operational difficulty.\""}</div>
+                <div className="mt-8 text-lg text-gray-500">{"\"We used to use firebase for our android app which was kind of a black box. Later, we found appwrite which was an open source alternative to firebase and so we chose Coplane's appwrite serverless offering. Using it we can scale our app without any operational difficulty.\""}</div>
               </div>
               <div className="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
                 <div className="flex items-center justify-center">
@@ -347,7 +347,7 @@ export default function Home() {
                     <p className="text-gray-600">Freelance Developer</p>
                   </div>
                 </div>
-                <div className="mt-8 text-lg text-gray-500">{"\"NetInc is awesome. It is a lot cheaper than any other backend service I've used. And the best part is that it's serverless which makes it crazy scalable without any overhead. My clients love it too.\""}</div>
+                <div className="mt-8 text-lg text-gray-500">{"\"Coplane is awesome. It is a lot cheaper than any other backend service I've used. And the best part is that it's serverless which makes it crazy scalable without any overhead. My clients love it too.\""}</div>
               </div>
 
             </div>
@@ -426,7 +426,7 @@ export default function Home() {
 
 
               <div className='flex flex-col items-center pl-4' >
-                <Logo />  <div className='font-semibold pt-2'>NetInc Serverless</div>
+                <Logo />  <div className='font-semibold pt-2'>Coplane Serverless</div>
 
                 <div className='text-gray-500 text-xl'>{'$'}{(4 * cpu + 1 * ram + 0 * req).toFixed(2)}</div></div>
 
@@ -447,14 +447,14 @@ export default function Home() {
         <div className='px-2  max-w-4xl'>
           <Collapse.Group>
             <Collapse title="What is a serverless infrastructure?">
-              <Text>{"With servers/instances, you pay per-hour or a fixed price. With Serverless you're not charged when the service isn't in use. NetInc configures, manages and scales the services for you."}</Text>
+              <Text>{"With servers/instances, you pay per-hour or a fixed price. With Serverless you're not charged when the service isn't in use. Coplane configures, manages and scales the services for you."}</Text>
             </Collapse>
-            <Collapse title="How affordable is NetInc?">
+            <Collapse title="How affordable is Coplane?">
               <Text>{"We run our services on servers provided by our low cost vendor which makes our services accessible to anyone."}</Text>
             </Collapse>
             <Collapse title="Can I export my data?
 ">
-              <Text>Yes. You have full access to whatever services you use. If you decide to leave and want to export all your data, we will help you. NetInc has no vendor lock-in.
+              <Text>Yes. You have full access to whatever services you use. If you decide to leave and want to export all your data, we will help you. Coplane has no vendor lock-in.
               </Text>
             </Collapse>
           </Collapse.Group>
@@ -492,7 +492,7 @@ export default function Home() {
       </section>
       <div className='px-10 py-10 bg-gray-50'>
         <div className='
-  shadow-xl shadow-blue-200
+
       rounded-xl
   bg-primary w-full h-72 sm:h-56 flex flex-col sm:flex-row  blur-none justify-evenly text-white text-5xl font-extrabold items-center'>
 

@@ -89,7 +89,7 @@ export default function Contact() {
 
                     </div>
                 </a></Link>
-                <Link href='https://twitter.com/netincTeam'><a target='_blank' className='  xl:pl-14 space-y-2  w-80 flex justify-center items-center space-x-6'>
+                <Link href='https://twitter.com/CoplaneTeam'><a target='_blank' className='  xl:pl-14 space-y-2  w-80 flex justify-center items-center space-x-6'>
 
                     <div className='w-20 h-20 rounded-full'>
 
@@ -99,7 +99,7 @@ export default function Contact() {
                             Follow us on Twitter
                         </div>
                         <div>
-                            Get NetInc news, company information, and updates at @NetIncTeam.
+                            Get Coplane news, company information, and updates at @CoplaneTeam.
                         </div>
 
                     </div>
