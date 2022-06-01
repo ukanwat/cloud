@@ -177,7 +177,7 @@ export default function Home() {
 
 
       <div className='flex w-full px-2 justify-center items-center py-12 font-medium space-y-2 sm:space-y-0 sm:space-x-4 flex-col sm:flex-row'>
-        <Button auto type="success">Get Started(coming soon)</Button>  <Link href={'https://docs.Coplane.io/'}  ><a target="_blank"><Button auto type="">Read more</Button></a></Link>
+        <Button auto type="success">Get Started(coming soon)</Button>  <Link href={'https://docs.coplane.co/'}  ><a target="_blank"><Button auto type="">Read more</Button></a></Link>
 
       </div>
       <div className='flex flex-col px-2 lg:flex-row space-y-12 justify-center items-center space-x-10'>

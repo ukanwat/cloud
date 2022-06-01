@@ -63,7 +63,7 @@ const Footer = () => {
                 </div>
                 </a></Link>
 
-                <Link href={'https://status.Coplane.io'}><a target="_blank" className='pl-2 bg-white rounded-md border-p items-center flex text-gray-600 w-20 mr-20 justify-start hover:text-gray-900 hover:underline'>  <div className='flex'>
+                <Link href={'https://status.coplane.co'}><a target="_blank" className='pl-2 bg-white rounded-md border-p items-center flex text-gray-600 w-20 mr-20 justify-start hover:text-gray-900 hover:underline'>  <div className='flex'>
 
                     Status:
                     <div className='mt-2 ml-2 h-2.5 w-2.5 rounded-full bg-primary'>

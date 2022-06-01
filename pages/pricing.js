@@ -62,10 +62,10 @@ export default function About() {
                             <Text>No, currently as of now we do not provide any kind of free trial because our cloud plans are already pretty affordable.</Text>
                         </Collapse>
                         <Collapse title="What kind of support does Coplane provide?">
-                            <Text>If you have the cloud plan you can get support by email at support@Coplane.io. And for enterprise plan we provide 24x7 support.</Text>
+                            <Text>If you have the cloud plan you can get support by email at support@coplane.co. And for enterprise plan we provide 24x7 support.</Text>
                         </Collapse>
                         <Collapse title="Where can I get the Coplane's privacy policy and Terms?">
-                            <Text>You can read the Privacy policy  and terms of service at https://Coplane.io/legal/privacy and https://Coplane.io/legal/terms respectively.</Text>
+                            <Text>You can read the Privacy policy  and terms of service at https://coplane.co/legal/privacy and https://coplane.co/legal/terms respectively.</Text>
                         </Collapse>
                         <Collapse title="Are there any limits on data transfer?">
                             <Text>No, unlike most of the cloud providers our data egress and ingress are totally free with no limits. </Text>
