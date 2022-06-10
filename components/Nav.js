@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React, { useEffect, useState } from "react";
 import { ArrowUpRight } from '@geist-ui/react-icons'
 import { Popover, Tooltip, Drawer } from '@geist-ui/react'
+import { Icon } from './SVG';
 const Nav = () => {
 
     const [shadow, setShadow] = useState(false);
@@ -42,50 +43,15 @@ const Nav = () => {
                 <Link href={'/'}><a className='text-black  scale-90 sm:scale-100'>
                     <div className='flex items-center scale-75'>
 
-                        <svg
-                            viewBox="0 0 200 200"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlSpace="preserve"
-                            style={{
-                                fillRule: "evenodd",
-                                clipRule: "evenodd",
-                                strokeLinecap: "round",
-                            }}
-                            width="3em"
-                            height="3em"
-                            className='mt-3 pr-1 '
-                        >
-                            <path
-                                style={{
-                                    fill: "none",
-                                }}
-                                d="M61.09 105.382h213.461v202.062H61.09z"
-                                transform="translate(-61.09 -105.382)"
-                            />
-                            <path
-                                d="M-64.858 52.28 15.33-52.28h49.528L-18.475 52.28h-46.383Z"
-                                style={{
-                                    fillRule: "nonzero",
-                                    stroke: "#000",
-                                    strokeWidth: 1,
-                                }}
-                                transform="matrix(1.13 -.24 .21 .98 75.69 83.82)"
-                            />
-                            <path
-                                d="M-64.858 52.28 15.33-52.28h49.528L-18.475 52.28h-46.383Z"
-                                style={{
-                                    fillRule: "nonzero",
-                                    stroke: "#000",
-                                    strokeWidth: 1,
-                                }}
-                                transform="matrix(1.1 -.23 .21 .98 134.43 115.8)"
-                            />
-                        </svg>
-
+                        <Icon />
 
                         <div className='flex space-y-0 justify-center  mb-3 text-5xl items-center'>
 
-                            <div className='font-bold  text-4xl h-5'>Coplane</div>
+
+                            <div className='font-bold font-poppins  text-4xl h-5'>Coplane</div>
+
+
+
                         </div>
 
                     </div>

@@ -327,4 +327,30 @@ function CloudRun() {
         </svg>)
 }
 
-export { pricingCard, fastCard, globalCard, puzzleCard, Fargate, CloudRun, Logo }
+function Icon() {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fillRule="evenodd"
+            strokeLinejoin="round"
+            strokeMiterlimit="2"
+            clipRule="evenodd"
+
+            className="h-8 w-8"
+            viewBox="0 0 150 180"
+        >
+            <path
+                fillRule="nonzero"
+                d="M-155.88 89.999h103.921L0-.001h-103.921l-51.959 90z"
+                transform="translate(-9007.54 -545.202) translate(7783.29 -6.598) matrix(1.01744 0 0 1 -29.303 11.8) matrix(-1 .00001 .00001 1 1232.06 540.002)"
+            ></path>
+            <path
+                fillRule="nonzero"
+                d="M-155.883-.002H-51.96L.001-89.999h-103.923L-155.883-.002z"
+                transform="translate(-9007.54 -545.202) translate(7783.29 -6.598) matrix(1.01744 0 0 1 -29.303 11.8) scale(-1 1) rotate(60 -1317.505 -751.987)"
+            ></path>
+        </svg>
+    );
+}
+
+export { pricingCard, fastCard, globalCard, puzzleCard, Fargate, CloudRun, Logo, Icon }

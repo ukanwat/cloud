@@ -8,7 +8,7 @@ import ReviewCard from '../components/ReviewCard'
 import { ChevronDown, Database, Key, HardDrive, FileFunction } from '@geist-ui/react-icons'
 import { useState } from 'react';
 import { ComparisonList, FeatureList, } from '../components/Comparison';
-import { pricingCard, globalCard, fastCard, puzzleCard, CloudRun, Fargate, Logo } from '../components/SVG';
+import { pricingCard, globalCard, fastCard, puzzleCard, CloudRun, Fargate, Logo, Icon } from '../components/SVG';
 import FeatureCard from '../components/FeatureCard'
 import GlobalTheme from '@atlaskit/theme/components';
 import Script from 'next/script'
@@ -426,7 +426,7 @@ export default function Home() {
 
 
               <div className='flex flex-col items-center pl-4' >
-                <Logo />  <div className='font-semibold pt-2'>Coplane Serverless</div>
+                <Icon />  <div className='font-semibold pt-2'>Coplane Serverless</div>
 
                 <div className='text-gray-500 text-xl'>{'$'}{(4 * cpu + 1 * ram + 0 * req).toFixed(2)}</div></div>
 
