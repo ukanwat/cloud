@@ -2,81 +2,130 @@ import Link from 'next/link'
 import React from 'react';
 import { AlertCircleFill, ArrowUpRight } from '@geist-ui/react-icons'
 import Script from 'next/script';
+import { Icon } from './SVG';
+import { Divider } from '@geist-ui/react';
 const Footer = () => {
 
     return (
-        <div className="border-t-p pt-5 flex flex-col items-center justify-center space-y-8 bottom-0 h-64  bg-white w-screen mt-0">
-
-            <div className='flex'>
-                <div className='h-12 w-12'>
-
-                    <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-
-                        <g>
-                            <ellipse ry="18" rx="18" id="svg_1" cy="24" cx="24" stroke="#000" fill="#05b" strokeWidth="0">
-
-                            </ellipse>
-                            <ellipse ry="15" rx="15" id="svg_2" cy="24" cx="24" stroke="#000" fill="#08f" strokeWidth="0" />
-                            <ellipse ry="11.5" rx="11.5" id="svg_3" cy="24" cx="24" stroke="#000" fill="#0bf" strokeWidth="0" />
-                            <ellipse ry="8" rx="8" id="svg_3" cy="24" cx="24" stroke="#000" fill="#fff" strokeWidth="0" />
-                        </g>
-                    </svg>
-                </div>
-
-                <div className='flex flex-col space-y-0 font-extrabold text-3xl items-center'>
-
-                    <div className='font-bold text-xl h-5'>Coplane</div>
-                    <div className='font-light text-lg h-5'>CLOUD</div>
-                </div>
-
-            </div>
+        <div className="border-t-p  flex flex-col items-center justify-center space-y-8 bottom-0   w-screen bg-[#141414] mt-0">
 
 
 
-            <div className='flex flex-col sm:flex-row items-center space-x-0 space-y-2 sm:space-x-8 sm:space-y-0
-            '>
 
-                <Link href={'/legal/privacy'}><a className='text-gray-600 w-40 hover:text-gray-900  flex justify-start hover:underline'>  <div className='flex'>
 
-                    Privacy Policy
-                    <div className='mt-0.5'>
-                        <ArrowUpRight size={21} color='#999' />
+
+
+            <footer className=" text-white ">
+                <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                        <div className='pt-4'>
+                            <div className='h-6 w-52 justify-start  items-center space-x-2 flex'>
+
+                                <Icon color="#fff" />
+
+                                <div className='flex space-y-0 justify-center  mb-3 text-5xl items-center'>
+
+
+                                    <div className='font-medium   text-3xl h-6'>Coplane</div>
+
+
+
+                                </div>
+                            </div>
+
+                            <p className="max-w-xs mt-4 text-lg text-white opacity-60 font-semibold">
+                                Serverless containers at edge.
+                            </p>
+
+                            <div className="flex mt-8 space-x-6 text-gray-500">
+
+
+                                <a className="hover:opacity-75" href="https://twitter.com/coplanecloud" target="_blank" rel="noreferrer">
+                                    <span className="sr-only"> Twitter </span>
+                                    <div className='flex'>
+                                        <svg className="w-6 h-6" fill="#fff" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                        </svg>
+
+
+                                    </div>
+
+                                </a>
+
+                                {/* <a className="hover:opacity-75"  href="" target="_blank" rel="noreferrer">
+                                    <span className="sr-only"> GitHub </span>
+
+                                    <svg className="w-6 h-6" fill="#fff" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                                    </svg>
+                                </a> */}
+
+
+                            </div>
+                        </div>
+
+                        <div className=" font-medium text-base  grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                            <div>
+                                <p className="font-medium">
+                                    Company
+                                </p>
+
+                                <nav className="flex  flex-col mt-2 space-y-2  text-gray-500">
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> About </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> Meet the Team </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> History </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="">Careers </a>
+                                </nav>
+                            </div>
+
+                            <div>
+                                <p className="font-medium">
+                                    Services
+                                </p>
+
+                                <nav className="flex flex-col mt-2 space-y-2 text-gray-500">
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> 1on1 Coaching </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> Company Review </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> Accounts Review </a>
+                                </nav>
+                            </div>
+
+                            <div>
+                                <p className="font-medium">
+                                    Helpful Links
+                                </p>
+
+                                <nav className="flex flex-col mt-2 space-y-2 text-gray-500">
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> Contact </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> FAQs </a>
+                                </nav>
+                            </div>
+
+                            <div>
+                                <p className="font-medium">
+                                    Legal
+                                </p>
+
+                                <nav className="flex flex-col mt-2 space-y-2  text-gray-500">
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="">Privacy Policy </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="">Terms & Conditions </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='h-[1px] w-full text-lg bg-gray-800 my-8' />
+                    <div className=' justify-between flex items-center h-6'>
+                        <div className="text-gray-500">
+                            <a className=" opacity-60 hover:opacity-100 text-white" href="https://status.coplane.co"> System Status </a>
+                        </div>
+                        <div className=" opacity-60  text-white">
+                            Copyright  &copy; 2022 Coplane.  All rights reserved.
+                        </div>
                     </div>
 
                 </div>
-                </a></Link>
-                <Link href={'/legal/terms'}><a className='text-gray-600 w-40 hover:text-gray-900 flex justify-start hover:underline'>  <div className='flex'>
-                    Terms of Service
-                    <div className='mt-0.5'>
-                        <ArrowUpRight size={21} color='#999' />
-                    </div>
-
-                </div>
-                </a></Link>
-                <Link href={'/contact'}><a target="_blank" className='text-gray-600 w-40 flex justify-start hover:text-gray-900 hover:underline'>  <div className='flex'>
-
-                    Contact Us
-                    <div className='mt-0.5'>
-                        <ArrowUpRight size={21} color='#999' />
-                    </div>
-
-                </div>
-                </a></Link>
-
-                <Link href={'https://status.coplane.co'}><a target="_blank" className='pl-2 bg-white rounded-md border-p items-center flex text-gray-600 w-20 mr-20 justify-start hover:text-gray-900 hover:underline'>  <div className='flex'>
-
-                    Status:
-                    <div className='mt-2 ml-2 h-2.5 w-2.5 rounded-full bg-primary'>
-
-                    </div>
-
-                </div>
-                </a></Link>
-
-            </div>
-            <div className='px-2'>   <div className='text-lg px-2 text-center'>
-                © 2022 Coplane. All rights reserved.
-            </div></div>
+            </footer>
 
 
 
