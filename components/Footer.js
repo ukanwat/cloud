@@ -71,10 +71,10 @@ const Footer = () => {
                                 </p>
 
                                 <nav className="flex  flex-col mt-2 space-y-2  text-gray-500">
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/about"> About </a>
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/contact"> Contact </a>
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/"> Product </a>
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/pricing">Pricing </a>
+                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/about"><a> About </a></Link>
+                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/contact"><a> Contact </a></Link>
+                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/"><a>  Product </a></Link>
+                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/pricing"><a> Pricing </a></Link>
                                 </nav>
                             </div>
 
@@ -108,8 +108,8 @@ const Footer = () => {
                                 </p>
 
                                 <nav className="flex flex-col mt-2 space-y-2  text-gray-500">
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/legal/privacy">Privacy Policy </a>
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/legal/terms">Terms & Conditions </a>
+                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/legal/privacy"><a>Privacy Policy </a></Link>
+                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/legal/terms"><a>Terms & Conditions </a></Link>
                                 </nav>
                             </div>
                         </div>

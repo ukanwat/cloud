@@ -16,8 +16,8 @@ export default function About() {
 
         <div className="pt-10 md:pt-24 mt-16 flex flex-col justify-center items-center px-2">
 
-            <h1 class="max-w-5xl mb-10 text-3xl font-bold leading-none tracking-tighter text-neutral-800 md:text-5xl lg:text-6xl lg:max-w-7xl">
-                Pricing that scales with your usage. <br class="hidden lg:block" />
+            <h1 className="max-w-5xl mb-10 text-3xl font-bold leading-none tracking-tighter text-neutral-800 md:text-5xl lg:text-6xl lg:max-w-7xl">
+                Pricing that scales with your usage. <br className="hidden lg:block" />
                 Only pay for the resources used.
 
             </h1>

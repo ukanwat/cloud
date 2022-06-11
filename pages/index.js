@@ -145,68 +145,68 @@ export default function Home() {
       />
 
       <section>
-        <div class="relative items-center w-full px-5 pb-12 pt-8 mx-auto md:px-12 lg:px-16 max-w-7xl lg:pb-24">
-          <div class="flex w-full mx-auto text-left">
-            <div class="relative inline-flex items-center mx-auto align-middle">
-              <div class="text-center">
-                <h1 class="max-w-5xl text-3xl font-bold leading-none tracking-tighter text-neutral-800 md:text-5xl lg:text-6xl lg:max-w-7xl">
-                  Run your Containers and Apps <br class="hidden lg:block" />
+        <div className="relative items-center w-full px-5 pb-12 pt-8 mx-auto md:px-12 lg:px-16 max-w-7xl lg:pb-24">
+          <div className="flex w-full mx-auto text-left">
+            <div className="relative inline-flex items-center mx-auto align-middle">
+              <div className="text-center">
+                <h1 className="max-w-5xl text-3xl font-bold leading-none tracking-tighter text-neutral-800 md:text-5xl lg:text-6xl lg:max-w-7xl">
+                  Run your Containers and Apps <br className="hidden lg:block" />
                   Serverlessly @ Edge
                 </h1>
-                <p class="max-w-xl mx-auto mt-8 lg:text-2xl leading-relaxed text-gray-500">Deploy apps globally without managing any infrastructure. Your apps can autoscale from zero to infinity.
+                <p className="max-w-xl mx-auto mt-8 lg:text-2xl leading-relaxed text-gray-500">Deploy apps globally without managing any infrastructure. Your apps can autoscale from zero to infinity.
 
                 </p>
-                <div class="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
+                <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
                   <a href='https://console.coplane.co/auth'> <Button type='success-light'>Start Deploying Now</Button></a>
                 </div>
               </div>
             </div>
           </div>
           <section id="intro">
-            <div class="flex flex-col items-center justify-center mt-10 pt-24 mx-auto rounded-lg max-w-7xl ">
-              <img class="object-cover object-center w-full rounded-xl" alt="hero" src="https://www.twingate.com/static/2191016f02395f5bb4cc893a57feb104/ec5f9/macbook-client.webp" />
+            <div className="flex flex-col items-center justify-center mt-10 pt-24 mx-auto rounded-lg max-w-7xl ">
+              <img className="object-cover object-center w-full rounded-xl" alt="hero" src="https://www.twingate.com/static/2191016f02395f5bb4cc893a57feb104/ec5f9/macbook-client.webp" />
             </div>
           </section>
         </div>
       </section>
 
       <section>
-        <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
-          <div class="grid w-full grid-cols-1 gap-12 mx-auto lg:grid-cols-4">
-            <div class="p-6">
-              <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-blue-600 rounded-full bg-blue-50">
+        <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+          <div className="grid w-full grid-cols-1 gap-12 mx-auto lg:grid-cols-4">
+            <div className="p-6">
+              <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-blue-600 rounded-full bg-blue-50">
                 <Zap />
               </div>
-              <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">Global Low latency</h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">With 38ms average latency, deliver consistent experience no matter where the request are coming from.</p>
+              <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">Global Low latency</h1>
+              <p className="mx-auto text-base leading-relaxed text-gray-500">With 38ms average latency, deliver consistent experience no matter where the request are coming from.</p>
             </div>
-            <div class="p-6">
-              <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-blue-600 rounded-full bg-blue-50">
+            <div className="p-6">
+              <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-blue-600 rounded-full bg-blue-50">
                 <CreditCard />
               </div>
-              <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">Usage based billing</h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">With per second billling, You will only be charged for the exact amount of resources used by your apps.</p>
+              <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">Usage based billing</h1>
+              <p className="mx-auto text-base leading-relaxed text-gray-500">With per second billling, You will only be charged for the exact amount of resources used by your apps.</p>
             </div>
-            <div class="p-6">
-              <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-blue-600 rounded-full bg-blue-50">
+            <div className="p-6">
+              <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-blue-600 rounded-full bg-blue-50">
                 <Globe />
               </div>
-              <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">Edge Network</h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">Our Edge Network sits in-between the internet and your app instances. It prefetches and caches dynamic data to provide even better performance, reliability and security. </p>
+              <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">Edge Network</h1>
+              <p className="mx-auto text-base leading-relaxed text-gray-500">Our Edge Network sits in-between the internet and your app instances. It prefetches and caches dynamic data to provide even better performance, reliability and security. </p>
             </div>
-            <div class="p-6">
-              <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-blue-600 rounded-full bg-blue-50">
+            <div className="p-6">
+              <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-blue-600 rounded-full bg-blue-50">
                 <ZeroConfig />
               </div>
-              <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">Zero Config</h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">Deploy any app in a few clicks with deployments that are automated and abstracted from the underlying global infrastructure.
+              <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl">Zero Config</h1>
+              <p className="mx-auto text-base leading-relaxed text-gray-500">Deploy any app in a few clicks with deployments that are automated and abstracted from the underlying global infrastructure.
               </p>
             </div>
           </div>
         </div>
       </section>
       <section className='flex flex-col px-2 justify-center items-center space-y-2 bg-black/90 py-10'>
-        <h2 class="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-white lg:text-4xl">{'Coplane vs.  Cloud Run vs.  Azure Container Apps'}</h2>
+        <h2 className="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-white lg:text-4xl">{'Coplane vs.  Cloud Run vs.  Azure Container Apps'}</h2>
 
 
 
@@ -251,7 +251,7 @@ export default function Home() {
             </div>
           </div> </div>
 
-        <h2 class="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-white pt-10 lg:text-4xl">{"What makes Coplane Superior"}</h2>
+        <h2 className="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-white pt-10 lg:text-4xl">{"What makes Coplane Superior"}</h2>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-white text-xl py-10'>
           <div className='flex space-x-4'><Check color='#48f' /> Global Edge Network</div>
@@ -268,7 +268,7 @@ export default function Home() {
 
 
       <section className="flex flex-col px-2 justify-center items-center space-y-2  py-10">
-        <h2 class="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-black lg:text-4xl">{"Run almost any language or framework"}</h2>
+        <h2 className="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-black lg:text-4xl">{"Run almost any language or framework"}</h2>
         <div className=' max-w-7xl w-full grid grid-cols-3 lg:grid-cols-5 gap-10 text-white text-xl py-8 scale-75 lg:scale-90 border-black  border-4  px-10 rounded-2xl'>
 
 
@@ -294,7 +294,7 @@ export default function Home() {
 
       <div className='flex flex-col mt-8 items-center'>
         <div className='py-8 flex flex-col items-center space-y-2'>
-          <h2 class="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-black pt-10 lg:text-4xl">{"Frequently Asked Questions"}</h2>
+          <h2 className="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-black pt-10 lg:text-4xl">{"Frequently Asked Questions"}</h2>
         </div>
 
 
