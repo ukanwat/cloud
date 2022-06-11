@@ -71,10 +71,10 @@ const Footer = () => {
                                 </p>
 
                                 <nav className="flex  flex-col mt-2 space-y-2  text-gray-500">
-                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/about"><a> About </a></Link>
-                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/contact"><a> Contact </a></Link>
-                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/"><a>  Product </a></Link>
-                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/pricing"><a> Pricing </a></Link>
+                                    <Link href="/about"><a className=" opacity-60 hover:opacity-100 text-white"> About </a></Link>
+                                    <Link href="/contact"><a className=" opacity-60 hover:opacity-100 text-white"> Contact </a></Link>
+                                    <Link href="/"><a className=" opacity-60 hover:opacity-100 text-white">  Product </a></Link>
+                                    <Link href="/pricing"><a className=" opacity-60 hover:opacity-100 text-white"> Pricing </a></Link>
                                 </nav>
                             </div>
 
@@ -108,8 +108,8 @@ const Footer = () => {
                                 </p>
 
                                 <nav className="flex flex-col mt-2 space-y-2  text-gray-500">
-                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/legal/privacy"><a>Privacy Policy </a></Link>
-                                    <Link className=" opacity-60 hover:opacity-100 text-white" href="/legal/terms"><a>Terms & Conditions </a></Link>
+                                    <Link href="/legal/privacy"><a className=" opacity-60 hover:opacity-100 text-white">Privacy Policy </a></Link>
+                                    <Link href="/legal/terms"><a className=" opacity-60 hover:opacity-100 text-white">Terms & Conditions </a></Link>
                                 </nav>
                             </div>
                         </div>
