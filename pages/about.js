@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { codeAbout, handAbout, registryAbout } from '../components/SVG'
 
 
@@ -6,7 +7,7 @@ export default function About() {
     return (
 
         <div className="pt-24 mt-14 md:mt-24 flex flex-col justify-center items-center px-2">
-            <div className='flex w-full md:w-200 lg:w-300 text-center justify-center items-center text-3xl  sm:text-4xl lg:text-6xl font-extrabold'>
+            <div className='flex w-full  leading-none tracking-tighter md:w-200 lg:w-300 text-center justify-center items-center text-3xl  sm:text-4xl lg:text-6xl font-bold'>
                 {'Deploy and manage highly scalable applications on a fully managed serverless platform.'}
             </div>
 
@@ -25,7 +26,7 @@ export default function About() {
 
             <div className='py-20 flex items-start md:space-x-8 mb-10 flex-col space-y-8 md:space-y-0 md:flex-row'>
                 <div className=' space-y-2 flex flex-col justify-center items-center'>
-                    <img width={80} src={'https://storage.googleapis.com/Coplane/codeAbout.png'} />
+                    <img width={80} height={80} src={'https://coplane.s3.us-east-2.amazonaws.com/codeAbout.png'} />
                     <div className=' font-bold text-xl'>
                         Quick
                     </div>
@@ -35,7 +36,7 @@ export default function About() {
                 </div>
 
                 <div className=' space-y-2 flex flex-col justify-center items-center'>
-                    <img width={80} src={'https://storage.googleapis.com/Coplane/registryAbout.png'} />
+                    <img width={80} src={'https://coplane.s3.us-east-2.amazonaws.com/registryAbout.png'} />
                     <div className=' font-bold text-xl'>
                         Simple
                     </div>
@@ -44,7 +45,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className=' space-y-2 flex flex-col justify-center items-center '>
-                    <img width={80} src={'https://storage.googleapis.com/Coplane/handAbout.png'} />
+                    <img width={80} src={'https://coplane.s3.us-east-2.amazonaws.com/handAbout.png'} />
                     <div className=' font-bold text-xl'>
                         Amazing
                     </div>

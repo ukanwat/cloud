@@ -40,7 +40,7 @@ const Footer = () => {
                             <div className="flex mt-8 space-x-6 text-gray-500">
 
 
-                                <a className="hover:opacity-75" href="https://twitter.com/coplanecloud" target="_blank" rel="noreferrer">
+                                {/* <a className="hover:opacity-75" href="https://twitter.com/coplanecloud" target="_blank" rel="noreferrer">
                                     <span className="sr-only"> Twitter </span>
                                     <div className='flex'>
                                         <svg className="w-6 h-6" fill="#fff" viewBox="0 0 24 24" aria-hidden="true">
@@ -50,7 +50,7 @@ const Footer = () => {
 
                                     </div>
 
-                                </a>
+                                </a> */}
 
                                 {/* <a className="hover:opacity-75"  href="" target="_blank" rel="noreferrer">
                                     <span className="sr-only"> GitHub </span>
@@ -71,33 +71,34 @@ const Footer = () => {
                                 </p>
 
                                 <nav className="flex  flex-col mt-2 space-y-2  text-gray-500">
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> About </a>
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> Meet the Team </a>
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> History </a>
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href="">Careers </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/about"> About </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/contact"> Contact </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/"> Product </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/pricing">Pricing </a>
                                 </nav>
                             </div>
 
                             <div>
                                 <p className="font-medium">
-                                    Services
+                                    Documentation
                                 </p>
 
                                 <nav className="flex flex-col mt-2 space-y-2 text-gray-500">
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> 1on1 Coaching </a>
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> Company Review </a>
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> Accounts Review </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="https://docs.coplane.co/getting-started"> Getting Started </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="https://docs.coplane.co/introduction"> Introduction </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="https://docs.coplane.co/comparison"> Comparison </a>
                                 </nav>
                             </div>
 
                             <div>
                                 <p className="font-medium">
-                                    Helpful Links
+                                    Social
                                 </p>
 
                                 <nav className="flex flex-col mt-2 space-y-2 text-gray-500">
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> Contact </a>
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href=""> FAQs </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="https://console.coplane.co"> Twitter </a>
+
+
                                 </nav>
                             </div>
 
@@ -107,8 +108,8 @@ const Footer = () => {
                                 </p>
 
                                 <nav className="flex flex-col mt-2 space-y-2  text-gray-500">
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href="">Privacy Policy </a>
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href="">Terms & Conditions </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/legal/privacy">Privacy Policy </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="/legal/terms">Terms & Conditions </a>
                                 </nav>
                             </div>
                         </div>

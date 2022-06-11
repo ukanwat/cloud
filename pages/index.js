@@ -163,7 +163,7 @@ export default function Home() {
             </div>
           </div>
           <section id="intro">
-            <div class="flex flex-col items-center justify-center pt-24 mx-auto rounded-lg lg:px-10 max-w-7xl">
+            <div class="flex flex-col items-center justify-center mt-10 pt-24 mx-auto rounded-lg max-w-7xl ">
               <img class="object-cover object-center w-full rounded-xl" alt="hero" src="https://www.twingate.com/static/2191016f02395f5bb4cc893a57feb104/ec5f9/macbook-client.webp" />
             </div>
           </section>
@@ -214,8 +214,8 @@ export default function Home() {
         <div className='px-3 lg:px-0'>
 
 
-          <div className='rounded-xl max-w-7xl bg-[#222]  mx-2   flex flex-col lg:flex-row justify-center px-8 space-x-0 lg:space-x-5 mb-8 mt-2'>
-            <div className=' w-80 md:w-150 lg:w-200 space-y-2 pt-10'>
+          <div className='rounded-xl max-w-7xl bg-[#222]    flex flex-col xl:flex-row justify-center px-4 space-x-0 lg:space-x-5 mb-8 mt-2'>
+            <div className=' w-80 md:w-150 lg:w-150 space-y-2 pt-10'>
               <div className='flex   items-center'>
                 <div className='w-44 pr-7 text-white/50'>  CPU Usage in million vCPU-s</div>
 
@@ -232,7 +232,7 @@ export default function Home() {
 
                 <Slider type="success" initialValue={initReq} onChange={(n) => { setReq(n) }} min={1} max={1000} step={1} />
                 <Spacer /> </div>  </div>
-            <div className='w-80 md:w-150 scale-90 lg:scale-100 lg:w-200 flex flex-col  space-y-5 md:space-y-0 md:flex-row justify-between py-10  '>
+            <div className='w-80 md:w-150 scale-90 lg:scale-100 lg:w-150 flex flex-col  space-y-5 md:space-y-0 md:flex-row justify-between py-10  '>
 
               <div className='flex flex-col items-center pl-4' >
                 <Icon customClass={"h-28 w-28 "} color={'#fff'} size={20} />  <div className='font-semibold pt-2 text-white'>Coplane</div>
@@ -253,7 +253,7 @@ export default function Home() {
 
         <h2 class="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-white pt-10 lg:text-4xl">{"What makes Coplane Superior"}</h2>
 
-        <div className='grid grid-cols-3 gap-4 text-white text-xl py-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-white text-xl py-10'>
           <div className='flex space-x-4'><Check color='#48f' /> Global Edge Network</div>
           <div className='flex space-x-4'><Check color='#48f' /> Dynamic Site Acceleration</div>
           <div className='flex space-x-4'><Check color='#48f' /> Global Load balancing</div>
@@ -269,7 +269,7 @@ export default function Home() {
 
       <section className="flex flex-col px-2 justify-center items-center space-y-2  py-10">
         <h2 class="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-black lg:text-4xl">{"Run almost any language or framework"}</h2>
-        <div className='grid grid-cols-3 lg:grid-cols-5 gap-10 text-white text-xl py-8 scale-75 lg:scale-90 border-black  border-4  px-10 rounded-2xl'>
+        <div className=' max-w-7xl w-full grid grid-cols-3 lg:grid-cols-5 gap-10 text-white text-xl py-8 scale-75 lg:scale-90 border-black  border-4  px-10 rounded-2xl'>
 
 
           < DockerOriginal height="180" width="180" />   < JavaOriginal height="150" width="150" />  < NodejsOriginal height="130" width="130" /><GoOriginal hheight="130" width="130" /><DotNetOriginal height="150" width="150" /><NginxOriginal height="150" width="150" /><PhpOriginal height="150" width="150" /><ApacheOriginalWordmark height="150" width="150" /><RubyOriginal height="120" width="120" /><PythonOriginal height="130" width="130" />
@@ -287,53 +287,6 @@ export default function Home() {
 
 
 
-      <section className="flex items-center px-2 justify-center pb-14 pt-10 bg-white min-w-screen">
-        <div className="px-4 bg-white">
-          <div className="container flex flex-col items-start mx-auto lg:items-center">
-            <p className="relative flex items-start justify-start w-full font-normal text-primary tracking-wide text-lg uppercase   lg:justify-center lg:items-center">{"Don't just take our word for it"}</p>
-
-
-            <h2 className="relative flex items-start justify-start w-full max-w-3xl text-5xl font-bold lg:justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#1f76ff" className="absolute right-0 hidden w-12 h-12 -mt-2 -mr-16 text-gray-200 lg:inline-block" viewBox="0 0 975.036 975.036">
-                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-                </path>
-              </svg>
-              See what others are saying</h2>
-            <div className="block w-full h-0.5 max-w-lg mt-6 bg-blue-100 rounded-full"></div>
-
-            <div className="items-center justify-center w-full mt-12 mb-4 lg:flex">
-              <div className="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0">
-                <div className="flex items-center justify-center">
-                  <div className="w-14 h-14 mr-4 overflow-hidden bg-gray-200 rounded-full">
-                    <img src='/reviews/antonio_review.png' className="object-cover w-full h-full" />
-                  </div>
-                  <div className="flex flex-col items-start justify-center">
-                    <h4 className="font-bold text-gray-800 h-10 sm:h-1  mt-4">Antonis Mouzourakis (Beta User)</h4>
-                    <p className="text-gray-600 ">Front end developer at Distic</p>
-                  </div>
-                </div>
-                <div className="mt-8 text-lg text-gray-500">{"\"We used to use firebase for our android app which was kind of a black box. Later, we found appwrite which was an open source alternative to firebase and so we chose Coplane's appwrite serverless offering. Using it we can scale our app without any operational difficulty.\""}</div>
-              </div>
-              <div className="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
-                <div className="flex items-center justify-center">
-                  <div className="w-14 h-14 mr-4 overflow-hidden bg-gray-200 rounded-full">
-                    <img src='/reviews/nathan_review.png' className="object-cover w-full h-full" />
-                  </div>
-                  <div className="flex flex-col items-start justify-center">
-                    <h4 className="font-bold text-gray-800 h-10 sm:h-1  mt-4">Nathan Suarez (Beta User)</h4>
-                    <p className="text-gray-600">Freelance Developer</p>
-                  </div>
-                </div>
-                <div className="mt-8 text-lg text-gray-500">{"\"Coplane is awesome. It is a lot cheaper than any other backend service I've used. And the best part is that it's serverless which makes it crazy scalable without any overhead. My clients love it too.\""}</div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
 
 
 
@@ -347,17 +300,17 @@ export default function Home() {
 
 
 
-        <div className='px-2  max-w-4xl'>
+        <div className='px-2  max-w-7xl'>
           <Collapse.Group>
             <Collapse title="What is a serverless infrastructure?">
               <Text>{"With servers/instances, you pay per-hour or a fixed price. With Serverless you're not charged when the service isn't in use. Coplane configures, manages and scales the services for you."}</Text>
             </Collapse>
-            <Collapse title="How affordable is Coplane?">
-              <Text>{"We run our services on servers provided by our low cost vendor which makes our services accessible to anyone."}</Text>
+            <Collapse title="Do you provide free credits?">
+              <Text>{"Yes, first 100,000 vCPU-seconds and 200,000 GiB-seconds each month are free. Beyond that, you pay for what you use on a per second basis based on the number of vCPU-s and GiB-s your applications are allocated. There is no charge for number of requests."}</Text>
             </Collapse>
             <Collapse title="Can I export my data?
 ">
-              <Text>Yes. You have full access to whatever services you use. If you decide to leave and want to export all your data, we will help you. Coplane has no vendor lock-in.
+              <Text>Yes. You have full access to the services you use. If you decide to leave and want to export all your data, we will help you. Coplane has no vendor lock-in.
               </Text>
             </Collapse>
           </Collapse.Group>
@@ -366,41 +319,15 @@ export default function Home() {
 
 
       </div>
-      <section className="pt-10 sm:py-20 bg-gray-50 mt-20 px-4 ">
-        <div className=" items-center max-w-6xl  px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
-          <div className="flex flex-col-reverse lg:flex-row  items-center -mx-3">
-            <div className="order-1 w-full lg:w-1/2 lg:order-0">
-              <div className="w-full lg:max-w-md">
-                <h2 className="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">All-in-one deployment & monitoring of managed auto-scaling projects</h2>
-                <p className="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">Frictionless serverless application development for everyone. Our tools will help you with the following:</p>
-                <ul>
-                  <li className="flex items-center py-2 space-x-4 xl:py-3">
-                    <svg className="w-8 h-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
-                    <span className="font-medium text-gray-500">Faster Processing and Deployments</span>
-                  </li>
-                  <li className="flex items-center py-2 space-x-4 xl:py-3">
-                    <svg className="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
-                    <span className="font-medium text-gray-500">Out of the Box Autoscaling</span>
-                  </li>
-                  <li className="flex items-center py-2 space-x-4 xl:py-3">
-                    <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    <span className="font-medium text-gray-500">Total Protection and Security for Your Project</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="w-full px-3 mb-0 lg:w-1/2 order-0 lg:order-1 lg:mb-0 "><img className="mx-auto sm:max-w-sm lg:max-w-full" src="/images/feature-graphic.png" alt="feature image" /></div>
-          </div>
-        </div>
-      </section>
-      <div className='px-10 py-10 bg-gray-50'>
+
+      <div className='px-10 pt-20 pb-10 '>
         <div className='
 
       rounded-xl
-  bg-primary w-full h-72 sm:h-56 flex flex-col sm:flex-row  blur-none justify-evenly text-white text-5xl font-extrabold items-center'>
+   bg-gradient-to-t from-black to-black/80 w-full sm:h-56 flex flex-col sm:flex-row  blur-none justify-evenly text-white text-5xl font-extrabold items-center'>
 
-          <div className='flex flex-col text-3xl md:text-5xl space-y-4 mx-4'>
-            <div>
+          <div className='flex   flex-col text-3xl md:text-5xl space-y-4 mx-4'>
+            <div className='leading-none tracking-tighter'>
               Start Deploying Now →
             </div>
 
@@ -408,7 +335,10 @@ export default function Home() {
               Your Serverless application within 2 minutes
             </div>
           </div>
-          <Button type='secondary' onClick={() => { window.location.assign(server) }} >Create Account(Coming Soon)</Button>
+          <Button type='default' onClick={() => { window.location.assign('https://console.coplane.co/auth') }} >Create Account</Button>
+
+
+
         </div>
       </div>
 

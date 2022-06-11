@@ -269,19 +269,6 @@ const globalCard = () => {
 }
 
 
-function Logo() {
-    return (<svg className="scale-150" width="150px" xmlns="http://www.w3.org/2000/svg">
-
-        <g>
-            <ellipse ry="48" rx="48" id="svg_1" cy="72" cx="72" stroke="#000" fill="#05b" strokeWidth="0">
-
-            </ellipse>
-            <ellipse ry="40" rx="40" id="svg_2" cy="72" cx="72" stroke="#000" fill="#08f" strokeWidth="0" />
-            <ellipse ry="30.5" rx="30.5" id="svg_3" cy="72" cx="72" stroke="#000" fill="#0bf" strokeWidth="0" />
-            <ellipse ry="20" rx="20" id="svg_3" cy="72" cx="72" stroke="#000" fill="#fff" strokeWidth="0" />
-        </g>
-    </svg>)
-}
 function Fargate() {
     return (
         <svg className="h-28 w-28"
@@ -428,4 +415,4 @@ function Icon({ color, customClass }) {
     );
 }
 
-export { pricingCard, fastCard, globalCard, puzzleCard, Fargate, CloudRun, Logo, Icon }
+export { pricingCard, fastCard, globalCard, puzzleCard, Fargate, CloudRun, Icon, }

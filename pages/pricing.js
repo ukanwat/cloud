@@ -4,31 +4,31 @@ import { Button, Popover, Spacer, Collapse, Text, Divider } from '@geist-ui/reac
 import { Database, Key, HardDrive, FileFunction } from '@geist-ui/react-icons'
 
 export default function About() {
-    const comparisonFeatures = [{ 'name': "Database", 'section': true, 'icon': <Database /> }, { 'name': "Api Requests", 'info': 'Read, write, or delete requests to the database' }, { 'name': "Realtime functionality", 'info': 'Realtime allows you to listen to any events on the server-side in realtime' }, { 'name': "Database space", }, { 'name': "Transfer Limits", },
-    { 'name': "Authentication", 'section': true, 'icon': <Key /> }, { 'name': "Unlimited Users", }, { 'name': "Custom SMTP server", 'info': 'Mail server that you can use to send emails' }, { 'name': "Audit logs", },
-    { 'name': "Object Storage", 'section': true, 'icon': <HardDrive /> }, { 'name': "Storage", }, { 'name': "Customizable Access Controls", }, { 'name': "Outgoing Transfer Limits", },
-    { 'name': "Functions", 'section': true, 'icon': <FileFunction /> }, { 'name': "Invocations", 'info': 'Number of times your function is triggered' }, { 'name': "Networking", 'info': 'Data usage by functions' }, { 'name': "Compute", 'info': 'Computation power used by functions' }, { 'name': "Type", }];
+    const comparisonFeatures = [
+
+
+
+        { 'name': "Database", 'section': true, 'icon': <Database /> }, { 'name': "Api Requests", 'info': 'Read, write, or delete requests to the database' }, { 'name': "Realtime functionality", 'info': 'Realtime allows you to listen to any events on the server-side in realtime' }, { 'name': "Database space", }, { 'name': "Transfer Limits", },
+        { 'name': "Authentication", 'section': true, 'icon': <Key /> }, { 'name': "Unlimited Users", }, { 'name': "Custom SMTP server", 'info': 'Mail server that you can use to send emails' }, { 'name': "Audit logs", },
+        { 'name': "Object Storage", 'section': true, 'icon': <HardDrive /> }, { 'name': "Storage", }, { 'name': "Customizable Access Controls", }, { 'name': "Outgoing Transfer Limits", },
+        { 'name': "Functions", 'section': true, 'icon': <FileFunction /> }, { 'name': "Invocations", 'info': 'Number of times your function is triggered' }, { 'name': "Networking", 'info': 'Data usage by functions' }, { 'name': "Compute", 'info': 'Computation power used by functions' }, { 'name': "Type", }];
     return (
 
-        <div className="pt-10 md:pt-24 mt-24 flex flex-col justify-center items-center px-2">
+        <div className="pt-10 md:pt-24 mt-16 flex flex-col justify-center items-center px-2">
 
+            <h1 class="max-w-5xl mb-10 text-3xl font-bold leading-none tracking-tighter text-neutral-800 md:text-5xl lg:text-6xl lg:max-w-7xl">
+                Pricing that scales with your usage. <br class="hidden lg:block" />
+                Only pay for the resources used.
 
+            </h1>
 
-            <div className='flex px-2 text-center w-full justify-center items-center text-4xl  lg:text-6xl font-extrabold'>
-                Pricing that scales with your usage
-            </div>
-
-            <div className='flex w-full text-center justify-center items-center text-xl lg:text-2xl mt-2 font-medium text-gray-600'>
-                Scale to millions with fully Managed Appwrite on Coplane Cloud.
-
-            </div>
 
 
             <div className='flex flex-col lg:flex-row justify-center items-center my-6 border-p rounded-3xl py-5'>
                 <div className='hidden lg:block'>
                     <FeatureList features={comparisonFeatures} topButton={true} />
                 </div>
-                <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '15GB then $0.08 per GB', 'Free', null, true, true, true, null, '100GB then $0.012 per GB', true, 'free', null, 'free', 'free', 'free', '15 types of runtimes']} info={{ type: "Cloud", action: 'Start Using Now', 'function': () => { }, 'pricing': 'Starts at $6', 'topButton': true }} />
+                <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '15GB then $0.08 per GB', 'Free', null, true, true, true, null, '100GB then $0.012 per GB', true, 'free', null, 'free', 'free', 'free', '15 types of runtimes']} info={{ type: "Cloud", action: 'Start Using Now', 'function': () => { }, 'pricing': 'Pay as you go', 'topButton': true }} />
                 <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '8GB then $0.125 per GB', '$0.09 per GB', null, true, true, true, null, '100GB then $0.021 per GB', true, '$0.09 per GB', null, false, false, false, 'SQL functions']} info={{ type: "Enterprise", action: 'Contact Sales', 'function': () => { }, 'secondary': true, 'pricing': 'Custom', 'topButton': true }} />
 
             </div>
@@ -36,14 +36,13 @@ export default function About() {
 
             <div className='flex flex-col mt-20 items-center  w-full bg-gray-50'>
                 <div className='py-8 flex flex-col items-center space-y-2'>
-                    <div className=' text-5xl font-bold'>FAQ</div>
-                    <div className=' text-xl text-gray-500'>Frequently Asked Questions</div>
+                    <div className=' text-5xl font-bold leading-none tracking-tighter' >Pricing FAQ</div>
                 </div>
 
 
 
 
-                <div className='  max-w-4xl mb-20'>
+                <div className='  max-w-7xl w-full mb-20'>
                     <Collapse.Group>
 
                         <Collapse title="When will I be billed?">
