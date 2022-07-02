@@ -3,14 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button, Popover, Spacer, Collapse, Text, Divider, Slider } from '@geist-ui/react'
 import { server } from '../config'
-import { CodeBlock } from '@atlaskit/code';
 import ReviewCard from '../components/ReviewCard'
 import { ChevronDown, Database, Key, HardDrive, FileFunction, Zap, CreditCard, ZeroConfig, Globe, Check } from '@geist-ui/react-icons'
 import { useState } from 'react';
 import { ComparisonList, FeatureList, } from '../components/Comparison';
 import { pricingCard, globalCard, fastCard, puzzleCard, CloudRun, Fargate as AzureContainerApps, Logo, Icon } from '../components/SVG';
 import FeatureCard from '../components/FeatureCard'
-import GlobalTheme from '@atlaskit/theme/components';
 import Script from 'next/script'
 
 import { Fragment } from 'react'
