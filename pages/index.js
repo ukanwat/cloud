@@ -157,14 +157,14 @@ export default function Home() {
 
                 </p>
                 <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
-                  <a href='https://console.coplane.co/auth'> <Button type='success-light'>Start Deploying Now</Button></a>
+                  <a href='https://console.coplane.co/auth'> <Button type='success-light'>Coming Soon</Button></a>
                 </div>
               </div>
             </div>
           </div>
           <section id="intro">
-            <div className="flex flex-col items-center justify-center mt-10 pt-24 mx-auto rounded-lg max-w-7xl ">
-              <img className="object-cover object-center w-full rounded-xl" alt="hero" src="https://www.twingate.com/static/2191016f02395f5bb4cc893a57feb104/ec5f9/macbook-client.webp" />
+            <div className="flex shadow-2xl flex-col items-center justify-center mt-10  mx-auto rounded-lg max-w-7xl ">
+              <img className="object-cover object-center w-full border-p rounded-xl" alt="hero" src="/ui/console1.png" />
             </div>
           </section>
         </div>
@@ -232,16 +232,16 @@ export default function Home() {
 
                 <Slider type="success" initialValue={initReq} onChange={(n) => { setReq(n) }} min={1} max={1000} step={1} />
                 <Spacer /> </div>  </div>
-            <div className='w-80 md:w-150 scale-90 lg:scale-100 lg:w-150 flex flex-col  space-y-5 md:space-y-0 md:flex-row justify-between py-10  '>
+            <div className='w-80 md:w-150 scale-90 lg:scale-100 lg:w-150 flex flex-col  space-y-5 md:space-y-0 md:flex-row justify-around py-10  '>
 
               <div className='flex flex-col items-center pl-4' >
                 <Icon customClass={"h-28 w-28 "} color={'#fff'} size={20} />  <div className='font-semibold pt-2 text-white'>Coplane</div>
                 <div className='text-gray-500 text-xl'>{'$'}{(6 * cpu + 2 * ram + 0 * req).toFixed(2)}</div></div>
-              <div className='flex flex-col items-center '>
+              {/* <div className='flex flex-col items-center '>
                 <div className='h-20'>
                   <CloudRun />
                 </div>   <div className=' pt-10 font-semibold text-white'>GCP Cloud Run</div>
-                <div className='text-gray-500  text-xl'>{'$'}{(24 * cpu + 2.5 * ram + 0.4 * req).toFixed(2)}</div></div>
+                <div className='text-gray-500  text-xl'>{'$'}{(24 * cpu + 2.5 * ram + 0.4 * req).toFixed(2)}</div></div> */}
               <div className='flex flex-col items-center '>
                 <AzureContainerApps />
                 <div className='font-semibold pt-2 text-white'>Azure Container Apps</div>
