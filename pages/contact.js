@@ -25,7 +25,7 @@ export default function Contact() {
 
                     <div className='text-3xl font-bold'>Support</div>
                     <div className='text-gray-500 text-center'>We’re here to help with any question or code issue.</div>
-                    <Button auto type="secondary" >Contact Us</Button>
+                    <Button onClick={() => { window.location.assign('mailto:support@coplane.co') }} auto type="secondary" >Contact Us</Button>
 
 
                 </div>
@@ -36,7 +36,7 @@ export default function Contact() {
 
                     <div className='text-3xl font-bold'>Sales</div>
                     <div className='text-gray-500 text-center'>We’d love to talk about how we can work together.</div>
-                    <Button auto type="" >Contact Sales</Button>
+                    <Button onClick={() => { window.location.assign('mailto:sales@coplane.co') }} auto type="" >Contact Sales</Button>
 
 
                 </div>
@@ -48,7 +48,7 @@ export default function Contact() {
 
                     <div className='text-3xl font-bold'>Docs</div>
                     <div className='text-gray-500 text-center'>Learn about how to make use of appwrite.</div>
-                    <Button auto type="success-light" >Visit Docs</Button>
+                    <Button onClick={() => { window.location.assign('https://docs.coplane.co') }} auto type="success-light" >Visit Docs</Button>
 
 
                 </div>
