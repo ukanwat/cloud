@@ -135,13 +135,7 @@ export default function Home() {
 
     <div className='pt-24 mt-10'>
       <Script id='chat support' type="text/javascript"
-
-
-        // dangerouslySetInnerHTML={{
-        //   __html: `window.$crisp=[];window.CRISP_WEBSITE_ID="cdbf43c8-33e3-4b5d-bc84-3e883e89be30";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
-        // }}
         src='https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/90be7d04fb9c43a4967ca1b35f87e2f5ad572e3dc0ab4a71ae5455f4a948cf2e.js'
-
       />
 
       <section>
@@ -163,8 +157,8 @@ export default function Home() {
             </div>
           </div>
           <section id="intro">
-            <div className="flex shadow-2xl flex-col items-center justify-center mt-10  mx-auto rounded-lg max-w-7xl ">
-              <img className="object-cover object-center w-full border-p rounded-xl" alt="hero" src="/ui/console1.png" />
+            <div className="p-10 gradient-background flex flex-col items-center justify-center mt-10  mx-auto rounded-xl max-w-7xl ">
+              <img className="object-cover  object-center shadow-2xl w-full  rounded-lg" alt="hero" src="/ui/console1.png" />
             </div>
           </section>
         </div>
@@ -237,11 +231,11 @@ export default function Home() {
               <div className='flex flex-col items-center pl-4' >
                 <Icon customClass={"h-28 w-28 "} color={'#fff'} size={20} />  <div className='font-semibold pt-2 text-white'>Coplane</div>
                 <div className='text-gray-500 text-xl'>{'$'}{(6 * cpu + 2 * ram + 0 * req).toFixed(2)}</div></div>
-              {/* <div className='flex flex-col items-center '>
+              <div className='flex flex-col items-center '>
                 <div className='h-20'>
                   <CloudRun />
                 </div>   <div className=' pt-10 font-semibold text-white'>GCP Cloud Run</div>
-                <div className='text-gray-500  text-xl'>{'$'}{(24 * cpu + 2.5 * ram + 0.4 * req).toFixed(2)}</div></div> */}
+                <div className='text-gray-500  text-xl'>{'$'}{(24 * cpu + 2.5 * ram + 0.4 * req).toFixed(2)}</div></div>
               <div className='flex flex-col items-center '>
                 <AzureContainerApps />
                 <div className='font-semibold pt-2 text-white'>Azure Container Apps</div>
@@ -267,12 +261,20 @@ export default function Home() {
 
 
 
-      <section className="flex flex-col px-2 justify-center items-center space-y-2  py-10">
-        <h2 className="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-black lg:text-4xl">{"Run almost any language or framework"}</h2>
-        <div className=' max-w-7xl w-full grid grid-cols-3 lg:grid-cols-5 gap-10 text-white text-xl py-8 scale-75 lg:scale-90 border-black  border-4  px-10 rounded-2xl'>
+      <section className="flex flex-col px-2 justify-center items-center   py-10">
+        <h2 className="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-black lg:text-4xl">{"Deploy any language or framework"}</h2>
+        <div className=' max-w-5xl w-full grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-10 text-white text-xl md:py-8 scale-75 lg:scale-90   md:px-10 rounded-2xl'>
 
-
-          < DockerOriginal height="180" width="180" />   < JavaOriginal height="150" width="150" />  < NodejsOriginal height="130" width="130" /><GoOriginal hheight="130" width="130" /><DotNetOriginal height="150" width="150" /><NginxOriginal height="150" width="150" /><PhpOriginal height="150" width="150" /><ApacheOriginalWordmark height="150" width="150" /><RubyOriginal height="120" width="120" /><PythonOriginal height="130" width="130" />
+          <div className='p-4 bg-gray-100 rounded-lg'> < DockerOriginal /></div>
+          <div className='p-4 bg-gray-100 rounded-lg'>   < JavaOriginal /> </div>
+          <div className='p-4 bg-gray-100 rounded-lg'> < NodejsOriginal /></div>
+          <div className='p-4 bg-gray-100 rounded-lg'><GoOriginal /></div>
+          <div className='p-4 bg-gray-100 rounded-lg'><DotNetOriginal /></div>
+          <div className='p-4 bg-gray-100 rounded-lg'><NginxOriginal /></div>
+          <div className='p-4 bg-gray-100 rounded-lg'><PhpOriginal /></div>
+          <div className='p-4 bg-gray-100 rounded-lg'><ApacheOriginalWordmark /></div>
+          <div className='p-4 bg-gray-100 rounded-lg'><RubyOriginal /></div>
+          <div className='p-4 bg-gray-100 rounded-lg'><PythonOriginal /></div>
 
 
 
@@ -292,7 +294,7 @@ export default function Home() {
 
 
 
-      <div className='flex flex-col mt-8 items-center'>
+      <div className='flex flex-col mt-8 items-center bg-gray-100'>
         <div className='py-8 flex flex-col items-center space-y-2'>
           <h2 className="mx-auto mb-8 text-3xl font-semibold leading-none tracking-tighter text-black pt-10 lg:text-4xl">{"Frequently Asked Questions"}</h2>
         </div>
@@ -320,11 +322,12 @@ export default function Home() {
 
       </div>
 
-      <div className='px-10 pt-20 pb-10 '>
+      <div className='px-10 pt-20 pb-10 bg-gray-100 '>
         <div className='
 
-      rounded-xl
-   bg-gradient-to-t from-black to-black/80 w-full sm:h-56 flex flex-col sm:flex-row  blur-none justify-evenly text-white text-5xl font-extrabold items-center'>
+      rounded-lg
+  bg-[#141414]
+    w-full sm:h-56 flex flex-col sm:flex-row  blur-none justify-evenly text-white text-5xl font-extrabold items-center'>
 
           <div className='flex   flex-col text-3xl md:text-5xl space-y-4 mx-4'>
             <div className='leading-none tracking-tighter'>
@@ -335,7 +338,7 @@ export default function Home() {
               Your Serverless application within 2 minutes
             </div>
           </div>
-          <Button type='default' onClick={() => { window.location.assign('https://console.coplane.co/auth') }} >Create Account</Button>
+          <Button type='success-light' onClick={() => { window.location.assign('https://console.coplane.co/auth') }} >Create Account</Button>
 
 
 

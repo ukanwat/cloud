@@ -1,19 +1,18 @@
 import { ComparisonList, FeatureList, } from '../components/Comparison';
 import { Button, Popover, Spacer, Collapse, Text, Divider } from '@geist-ui/react'
 
-import { Database, Key, HardDrive, FileFunction } from '@geist-ui/react-icons'
+import { Database, Key, HardDrive, FileFunction, CreditCard, Monitor, UserX, Users } from '@geist-ui/react-icons'
 
 export default function About() {
     const comparisonFeatures = [
 
 
 
-        { 'name': "Database", 'section': true, 'icon': <Database /> }, { 'name': "Api Requests", 'info': 'Read, write, or delete requests to the database' }, { 'name': "Realtime functionality", 'info': 'Realtime allows you to listen to any events on the server-side in realtime' }, { 'name': "Database space", }, { 'name': "Transfer Limits", },
-        { 'name': "Authentication", 'section': true, 'icon': <Key /> }, { 'name': "Unlimited Users", }, { 'name': "Custom SMTP server", 'info': 'Mail server that you can use to send emails' }, { 'name': "Audit logs", },
-        { 'name': "Object Storage", 'section': true, 'icon': <HardDrive /> }, { 'name': "Storage", }, { 'name': "Customizable Access Controls", }, { 'name': "Outgoing Transfer Limits", },
-        { 'name': "Functions", 'section': true, 'icon': <FileFunction /> }, { 'name': "Invocations", 'info': 'Number of times your function is triggered' }, { 'name': "Networking", 'info': 'Data usage by functions' }, { 'name': "Compute", 'info': 'Computation power used by functions' }, { 'name': "Type", }];
-    return (
 
+        { 'name': "Monitoring", 'section': true, 'icon': <Monitor /> }, { 'name': "Metrics", }, { 'name': "Log retention", }, { 'name': "Audit log retention", },
+        { 'name': "Support", 'section': true, 'icon': <Users /> }, { 'name': "Dedicated Account Manager", }, { 'name': "Custom SLAs", }, { 'name': "Support", },
+        { 'name': "Pricing", 'section': true, 'icon': <CreditCard /> }, { 'name': "Requests", }, { 'name': "Network Usage", }, { 'name': "CPU usage", 'info': 'CPU used by containers in vCPU-s' }, { 'name': "Memory usage", 'info': 'Memory used by containers in GB-s' },];
+    return (
         <div className="pt-10 md:pt-24 mt-16 flex flex-col justify-center items-center px-2">
 
             <h1 className="max-w-5xl mb-10 text-3xl font-bold leading-none tracking-tighter text-neutral-800 md:text-5xl lg:text-6xl lg:max-w-7xl">
@@ -28,11 +27,11 @@ export default function About() {
                 <div className='hidden lg:block'>
                     <FeatureList features={comparisonFeatures} topButton={true} />
                 </div>
-                <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '15GB then $0.08 per GB', 'Free', null, true, true, true, null, '100GB then $0.012 per GB', true, 'free', null, 'free', 'free', 'free', '15 types of runtimes']} info={{ type: "Cloud", action: 'Start Using Now', 'function': () => { }, 'pricing': 'Pay as you go', 'topButton': true }} />
-                <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'free', true, '8GB then $0.125 per GB', '$0.09 per GB', null, true, true, true, null, '100GB then $0.021 per GB', true, '$0.09 per GB', null, false, false, false, 'SQL functions']} info={{ type: "Enterprise", action: 'Contact Sales', 'function': () => { }, 'secondary': true, 'pricing': 'Custom', 'topButton': true }} />
+                <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, '30 days', '30 days', '30 days', null, false, false, 'Basic Email Support', null, 'No Charge', '$0.075', '$0.000008', '$0.000003']} info={{ type: "Cloud", action: 'Start Using Now', 'function': () => { window.location.assign('https://console.coplane.co') }, 'pricing': 'Pay as you go', 'topButton': true }} />
+                <ComparisonList comparisonFeatures={comparisonFeatures} features={[null, 'Unlimited', 'Unlimited', '12 months', null, true, true, 'Custom', null, 'No charge', 'Custom', 'Custom', 'Custom']} info={{ type: "Enterprise", action: 'Contact Sales', 'function': () => { window.location.assign('https://coplane.co/contact') }, 'secondary': true, 'pricing': 'Custom', 'topButton': true }} />
 
             </div>
-
+            <div className='text-gray-600 text-xl px-4'>Apps are billed based on resource allocation. The first 100,000 vCPU-s and 200,000 GB-s each month are free. </div>
 
             <div className='flex flex-col mt-20 items-center  w-full bg-gray-50'>
                 <div className='py-8 flex flex-col items-center space-y-2'>

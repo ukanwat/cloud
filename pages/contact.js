@@ -61,7 +61,7 @@ export default function Contact() {
 
 
 
-                <Link href='https://twitter.com/CoplaneCloud'><a target='_blank' className='  xl:pl-14 space-y-2  w-80 flex justify-center items-center space-x-6'>
+                <Link href='https://twitter.com/CoplaneHQ'><a target='_blank' className='  xl:pl-14 space-y-2  w-80 flex justify-center items-center space-x-6'>
 
                     <div className='w-20 h-20 rounded-full'>
 
@@ -71,7 +71,7 @@ export default function Contact() {
                             Follow us on Twitter
                         </div>
                         <div>
-                            Get Coplane news, company information, and updates at @CoplaneCloud.
+                            Get Coplane news, company information, and updates at @CoplaneHQ.
                         </div>
 
                     </div>

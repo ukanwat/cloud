@@ -22,7 +22,7 @@ const ComparisonList = ({ features, info, comparisonFeatures }) => {
                         {info.pricing}
                     </div>
 
-                    {info.topButton == true && <div className='py-4'> <Button auto type={info.secondary == true ? '' : "success"}>{info.action}</Button> </div>}
+                    {info.topButton == true && <div className='py-4'> <Button auto type={info.secondary == true ? '' : "success"} onClick={info.function}>{info.action}</Button> </div>}
 
                 </div>
 
@@ -45,7 +45,7 @@ const ComparisonList = ({ features, info, comparisonFeatures }) => {
                 ))}
 
                 <div className='w-full lg:w-64 h-24 font-bold flex justify-center items-center'>
-                    <Button auto type={info.secondary == true ? '' : "success"}>{info.action}</Button>
+                    <Button onClick={info.function} auto type={info.secondary == true ? '' : "success"}>{info.action}</Button>
 
                 </div>
 
