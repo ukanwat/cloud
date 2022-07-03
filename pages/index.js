@@ -143,7 +143,7 @@ export default function Home() {
               <div className="text-center">
                 <h1 className="max-w-5xl text-3xl font-bold leading-none tracking-tighter text-neutral-800 md:text-5xl lg:text-6xl lg:max-w-7xl">
                   Run your Containers and Apps <br className="hidden lg:block" />
-                  Serverlessly @ Edge
+                  Serverlessly Everywhere
                 </h1>
                 <p className="max-w-xl mx-auto mt-8 lg:text-2xl leading-relaxed text-gray-500">Deploy apps globally without managing any infrastructure. Your apps can autoscale from zero to infinity.
 

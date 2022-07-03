@@ -48,26 +48,26 @@ export default function About() {
                             <Text>We will bill you at the start of the next month..</Text>
                         </Collapse>
                         <Collapse title="How can I monitor my usage and billing?">
-                            <Text>You can do this in the console.</Text>
+                            <Text>You can use the console to manage usage and billing.</Text>
                         </Collapse>
                         <Collapse title="I'm worried I could end up with a huge bill at the end of the month?">
-                            <Text>Our services are extremely affordable compared to other providers. You can set a pricing alert to track your usage</Text>
+                            <Text>You can set a pricing alert to track your usage. We also provide DDOS protection top protect your apps from abuse.</Text>
                         </Collapse>
-                        <Collapse title="Can the pricing change in future?">
-                            <Text>Our pricing most likely will not change in any near future because our services are catered towards developers.</Text>
-                        </Collapse>
-                        <Collapse title="Do you offer free trial?">
-                            <Text>No, currently as of now we do not provide any kind of free trial because our cloud plans are already pretty affordable.</Text>
+                        {/* <Collapse title="Can the pricing change in future?">
+                            <Text></Text>
+                        </Collapse> */}
+                        <Collapse title="Do you offer free tier?">
+                            <Text>Yes, The first 100,000 vCPU-s and 200,000 GB-s each month are free.</Text>
                         </Collapse>
                         <Collapse title="What kind of support does Coplane provide?">
                             <Text>If you have the cloud plan you can get support by email at support@coplane.co. And for enterprise plan we provide 24x7 support.</Text>
                         </Collapse>
                         <Collapse title="Where can I get the Coplane's privacy policy and Terms?">
-                            <Text>You can read the Privacy policy  and terms of service at https://coplane.co/legal/privacy and https://coplane.co/legal/terms respectively.</Text>
+                            <Text>You can read the Privacy policy and terms of service at https://coplane.co/legal/privacy and https://coplane.co/legal/terms respectively.</Text>
                         </Collapse>
-                        <Collapse title="Are there any limits on data transfer?">
-                            <Text>No, unlike most of the cloud providers our data egress and ingress are totally free with no limits. </Text>
-                        </Collapse>
+                        {/* <Collapse title="Are there any limits on data transfer?">
+                            <Text> </Text>
+                        </Collapse> */}
                     </Collapse.Group>
                 </div>
 

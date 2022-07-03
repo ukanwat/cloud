@@ -17,7 +17,7 @@ const Footer = () => {
 
             <footer className=" text-white ">
                 <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 gap:-8 lg:gap-x-80 lg:grid-cols-3">
                         <div className='pt-4'>
                             <div className='h-6 w-52 justify-start  items-center space-x-2 flex'>
 
@@ -33,8 +33,8 @@ const Footer = () => {
                                 </div>
                             </div>
 
-                            <p className="max-w-xs mt-4 text-lg text-white opacity-60 font-semibold">
-                                Serverless containers at edge.
+                            <p className="max-w-sm mt-4 text-md text-white opacity-70 font-medium">
+                                Most Advanced Serverless Container Platform.
                             </p>
 
                             <div className="flex mt-8 space-x-6 text-gray-500">
@@ -96,7 +96,7 @@ const Footer = () => {
                                 </p>
 
                                 <nav className="flex flex-col mt-2 space-y-2 text-gray-500">
-                                    <a className=" opacity-60 hover:opacity-100 text-white" href="https://console.coplane.co"> Twitter </a>
+                                    <a className=" opacity-60 hover:opacity-100 text-white" href="https://twitter.com/CoplaneHQ"> Twitter </a>
 
 
                                 </nav>
