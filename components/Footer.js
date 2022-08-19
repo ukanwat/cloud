@@ -120,6 +120,9 @@ const Footer = () => {
                         <div className="text-gray-500">
                             <a className=" opacity-60 hover:opacity-100 text-white" href="https://status.coplane.co"> System Status </a>
                         </div>
+<div className=" opacity-60  text-white">
+                           Developed by Utkarsh Kanwat
+                        </div>
                         <div className=" opacity-60  text-white">
                             Copyright  &copy; 2022 Coplane.  All rights reserved.
                         </div>
